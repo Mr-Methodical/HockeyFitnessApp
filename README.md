@@ -1,6 +1,8 @@
 # HockeyFitnessApp
 Ri\\/aL is a mobile app for hockey teams and groups to stay in shape and connected during the offseason. Players log workouts, coaches track progress, and teams compete on leaderboards to stay accountable and motivated. Groups of motivated teammates can also join without a coach to create their own accountability channels.
 
+[![Tutorial Video](youtube.png)](https://www.youtube.com/watch?v=FeUi4ICUFho)
+
 # Hockey Accountability App
 
 A React Native Expo application for hockey team accountability, featuring coach and player dashboards, workout logging, and team leaderboards.
