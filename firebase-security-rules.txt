@@ -1,0 +1,101 @@
+// Firestore Security Rules for Hockey Accountability App
+// Deploy these rules to Firebase Console > Firestore Database > Rules
+
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    
+    // Users collection - users can read/write their own document
+    match /users/{userId} {
+      allow read, write: if request.auth != null && request.auth.uid == userId;
+      
+      // Allow team members to read basic user info (for displaying names, etc.)
+      allow read: if request.auth != null && 
+        exists(/databases/$(database)/documents/teams/$(resource.data.teamId)/members/$(request.auth.uid));
+    }
+    
+    // Teams collection
+    match /teams/{teamId} {
+      // Anyone authenticated can read team info (needed for joining)
+      allow read: if request.auth != null;
+      
+      // Only coaches can create/update teams
+      allow create: if request.auth != null && 
+        request.resource.data.coachId == request.auth.uid;
+      
+      // Only the coach can update team settings
+      allow update: if request.auth != null && 
+        resource.data.coachId == request.auth.uid;
+      
+      // Team members subcollection
+      match /members/{memberId} {
+        // Team members can read member list
+        allow read: if request.auth != null && 
+          exists(/databases/$(database)/documents/teams/$(teamId)/members/$(request.auth.uid));
+        
+        // Users can join teams (create their own member document)
+        allow create: if request.auth != null && 
+          request.auth.uid == memberId;
+        
+        // Coach can manage all members
+        allow write: if request.auth != null && 
+          get(/databases/$(database)/documents/teams/$(teamId)).data.coachId == request.auth.uid;
+      }
+    }
+    
+    // Workouts collection
+    match /workouts/{workoutId} {
+      // Users can read workouts from their team
+      allow read: if request.auth != null && 
+        exists(/databases/$(database)/documents/teams/$(resource.data.teamId)/members/$(request.auth.uid));
+      
+      // Users can create workouts for their team
+      allow create: if request.auth != null && 
+        request.auth.uid == request.resource.data.userId &&
+        exists(/databases/$(database)/documents/teams/$(request.resource.data.teamId)/members/$(request.auth.uid));
+      
+      // Users can update their own workouts
+      allow update: if request.auth != null && 
+        request.auth.uid == resource.data.userId;
+      
+      // Users can delete their own workouts
+      allow delete: if request.auth != null && 
+        request.auth.uid == resource.data.userId;
+    }
+    
+    // Badges collection (if you implement the badge system)
+    match /badges/{badgeId} {
+      allow read: if request.auth != null;
+      // Only system/admin can create badges (handle via Cloud Functions)
+    }
+    
+    // User badges
+    match /userBadges/{userId} {
+      allow read: if request.auth != null && request.auth.uid == userId;
+      // Badge awards handled via Cloud Functions
+    }
+  }
+}
+
+// Storage Security Rules (deploy to Firebase Console > Storage > Rules)
+rules_version = '2';
+service firebase.storage {
+  match /b/{bucket}/o {
+    // Profile images
+    match /profile-images/{userId}/{allPaths=**} {
+      allow read, write: if request.auth != null && request.auth.uid == userId;
+    }
+    
+    // Workout images
+    match /workout-images/{userId}/{allPaths=**} {
+      allow read: if request.auth != null;
+      allow write: if request.auth != null && request.auth.uid == userId;
+    }
+    
+    // AI generated images
+    match /ai-images/{allPaths=**} {
+      allow read: if request.auth != null;
+      // AI images are created server-side
+    }
+  }
+}
