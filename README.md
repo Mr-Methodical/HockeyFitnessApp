@@ -20,8 +20,8 @@ A React Native Expo application for hockey team accountability, featuring coach 
 
 1. **Clone the repository**
    ```bash
-   git clone git clone https://github.com/Mr-Methodical/HockeyFitnessApp.git
-   cd hockey-accountability-app
+   git clone https://github.com/Mr-Methodical/HockeyFitnessApp.git
+   cd HockeyFitnessApp
    ```
 
 2. **Install dependencies**
