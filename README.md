@@ -1,47 +1,77 @@
+
 # HockeyFitnessApp
+
 Ri\\/aL is a mobile app for hockey teams and groups to stay in shape and connected during the offseason. Players log workouts, coaches track progress, and teams compete on leaderboards to stay accountable and motivated. Groups of motivated teammates can also join without a coach to create their own accountability channels.
 
 [![Tutorial Video](youtube.png)](https://www.youtube.com/watch?v=FeUi4ICUFho)
 
-# Hockey Accountability App
+## Hockey Accountability App
 
 A React Native Expo application for hockey team accountability, featuring coach and player dashboards, workout logging, and team leaderboards.
 
 ## 🚀 Getting Started
 
+
 ### Prerequisites
 
-- Node.js (14 or higher)
+- Node.js (v16 or higher)
 - npm or yarn
-- Expo CLI (`npm install -g @expo/cli`)
-- Firebase project with Firestore and Authentication enabled
+- Expo CLI (optional). Install globally with `npm install -g expo-cli` or run `npx expo` without global install.
+- Firebase project with Authentication, Firestore, and Storage enabled
 
 ### Setup Instructions
 
 1. **Clone the repository**
-   ```bash
-   git clone https://github.com/Mr-Methodical/HockeyFitnessApp.git
-   cd HockeyFitnessApp
-   ```
+  ```bash
+  git clone https://github.com/Mr-Methodical/HockeyFitnessApp.git
+  cd HockeyFitnessApp
+  ```
 
 2. **Install dependencies**
-   ```bash
-   npm install
-   ```
+  ```bash
+  npm install
+  ```
 
-3. **Firebase Configuration**
-   - Copy `.env.example` to `.env`
-   - Go to [Firebase Console](https://console.firebase.google.com/)
-   - Create a new project or use existing project
-   - Go to Project Settings > General
-   - Copy your Firebase config values into the `.env` file
+
+
+3. **Firebase & OpenAI API Configuration**
+- Copy `.env.example` to `.env` in the project root (see `.env.example` for required keys):
+  ```bash
+  # macOS / Linux
+  cp .env.example .env
+  # Windows (PowerShell)
+  copy .env.example .env
+  ```
+
+Open `.env` and add your keys:
+
+```env
+FIREBASE_API_KEY=...
+FIREBASE_AUTH_DOMAIN=...
+FIREBASE_PROJECT_ID=...
+FIREBASE_STORAGE_BUCKET=...
+FIREBASE_MESSAGING_SENDER_ID=...
+FIREBASE_APP_ID=...
+OPENAI_API_KEY=...   # only required if using AI features
+```
+
+Do not commit `.env`.
+
+**Do not edit `src/services/firebase.js` or `src/services/aiWorkout.js` directly for API keys. Use the `.env` file for all secrets.**
+
 
 4. **Start the development server**
-   ```bash
-   npx expo start
-   ```
-   - This will open the Expo development server in your browser.
-   - Testing on a phone: Install the Expo Go app (iOS or Android), then scan the QR code displayed in the terminal or browser to run the app on your device.
+  ```bash
+  npx expo start
+  ```
+
+This will start the Expo development server. You can then:
+- Press `i` for iOS simulator
+- Press `a` for Android emulator
+- Press `w` for web
+- To test on a phone, install Expo Go and scan the QR code
+
+
 ## Features
 
 ### 🏒 For Coaches
@@ -56,6 +86,7 @@ A React Native Expo application for hockey team accountability, featuring coach 
 - View team leaderboards
 - Track personal workout statistics
 
+
 ## Tech Stack
 
 - **Frontend**: React Native with Expo
@@ -63,44 +94,12 @@ A React Native Expo application for hockey team accountability, featuring coach 
 - **Navigation**: React Navigation
 - **State Management**: React Context API
 
-## Setup Instructions
 
-### Prerequisites
-- Node.js (v16 or higher)
-- Expo CLI (`npm install -g @expo/cli`)
-- Firebase project
+## Firestore & Storage Security Rules
 
-### 1. Install Dependencies
-```bash
-npm install
-```
-
-### 2. Firebase & OpenAI API Configuration
-1. Create a new Firebase project at [Firebase Console](https://console.firebase.google.com/)
-2. Enable Authentication with Email/Password
-3. Create a Firestore database
-4. Enable Storage for workout images
-5. Copy `.env.example` to `.env` in the project root:
-
-  ```bash
-  cp .env.example .env
-  # On Windows, use: copy .env.example .env
-  ```
-
-6. Fill in your Firebase and OpenAI API keys in the new `.env` file. You can find your Firebase config values in your Firebase Console under Project Settings > General. For OpenAI, use your OpenAI API key.
-
-**Do not edit `src/services/firebase.js` or `src/services/aiWorkout.js` directly for API keys. Use the `.env` file for all secrets.**
-  apiKey: "your-api-key",
-  authDomain: "your-auth-domain",
-  projectId: "your-project-id",
-  storageBucket: "your-storage-bucket",
-  messagingSenderId: "your-messaging-sender-id",
-  appId: "your-app-id"
-};
-```
-
-### 3. Firestore Security Rules
+### Firestore
 Set up the following Firestore security rules:
+
 
 ```javascript
 rules_version = '2';
@@ -110,24 +109,25 @@ service cloud.firestore {
     match /users/{userId} {
       allow read, write: if request.auth != null && request.auth.uid == userId;
     }
-    
     // Team members can read team data
     match /teams/{teamId} {
       allow read: if request.auth != null;
       allow write: if request.auth != null && 
         get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == 'coach';
     }
-    
     // Team members can read workouts, users can create their own
     match /workouts/{workoutId} {
       allow read: if request.auth != null;
-      allow create: if request.auth != null && request.auth.uid == resource.data.userId;
+      // use request.resource to validate incoming write data (resource doesn't exist yet)
+      allow create: if request.auth != null && request.resource.data.userId == request.auth.uid;
     }
   }
 }
 ```
 
-### 4. Storage Security Rules
+Note: Test these rules with the Firebase emulator before deploying.
+
+### Storage
 ```javascript
 rules_version = '2';
 service firebase.storage {
@@ -140,25 +140,7 @@ service firebase.storage {
 }
 ```
 
-## Running the App
 
-### Development
-```bash
-npm start
-```
-
-This will start the Expo development server. You can then:
-- Press `i` to run on iOS simulator
-- Press `a` to run on Android emulator
-- Press `w` to run in web browser
-- Scan the QR code with the Expo Go app on your phone
-
-### Platform-specific Commands
-```bash
-npm run ios     # Run on iOS
-npm run android # Run on Android
-npm run web     # Run in browser
-```
 
 ## Project Structure
 
@@ -166,19 +148,11 @@ npm run web     # Run in browser
 src/
 ├── components/          # Reusable UI components
 ├── navigation/          # Navigation setup
-│   └── RootNavigator.js
-├── screens/            # App screens
-│   ├── LoginScreen.js
-│   ├── SignupScreen.js
-│   ├── CoachDashboard.js
-│   └── PlayerDashboard.js
-├── services/           # Firebase services
-│   ├── firebase.js     # Firebase config
-│   ├── auth.js        # Authentication services
-│   └── team.js        # Team and workout services
-└── utils/             # Utilities and context
-    └── AuthContext.js # Authentication context
+├── screens/             # App screens (Login, Signup, Dashboards, Leaderboard, LogWorkout, Profile, Team Management, etc.)
+├── services/            # Firebase and backend services
+└── utils/               # Utilities and context providers
 ```
+
 
 ## Database Schema
 
@@ -219,21 +193,14 @@ src/
 }
 ```
 
+
 ## Next Steps
 
 ### Planned Features
-- [ ] Log Workout screen with image capture
-- [ ] Leaderboard screen with sorting options
 - [ ] Push notifications for team updates
 - [ ] Workout type categories and templates
 - [ ] Monthly/weekly challenges
 - [ ] Export workout data
-
-### Additional Screens to Implement
-- `LogWorkoutScreen.js` - Form for logging new workouts
-- `LeaderboardScreen.js` - Team ranking and statistics
-- `ProfileScreen.js` - User profile management
-- `TeamManagementScreen.js` - Coach team management tools
 
 ## Contributing
 
