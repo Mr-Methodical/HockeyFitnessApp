@@ -201,6 +201,7 @@ src/
 - [ ] Workout type categories and templates
 - [ ] Monthly/weekly challenges
 - [ ] Export workout data
+- [ ] Expand for other sports
 
 ## Contributing
 
