@@ -40,7 +40,8 @@ A React Native Expo application for hockey team accountability, featuring coach 
    ```bash
    npx expo start
    ```
-
+   - This will open the Expo development server in your browser.
+   - Testing on a phone: Install the Expo Go app (iOS or Android), then scan the QR code displayed in the terminal or browser to run the app on your device.
 ## Features
 
 ### 🏒 For Coaches
