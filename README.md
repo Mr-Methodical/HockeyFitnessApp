@@ -5,6 +5,10 @@ Ri\\/aL is a mobile app for hockey teams and groups to stay in shape and connect
 
 [![Tutorial Video](youtube_new.png)](https://www.youtube.com/watch?v=lZBOAnDxPo4)
 
+## AI Assistance Disclosure
+
+GitHub Copilot was used to support code development. All code was reviewed and adapted by me to ensure it functions as intended, and I was actively involved in the design and structure of the project.
+
 ## Hockey Accountability App
 
 A React Native Expo application for hockey team accountability, featuring coach and player dashboards, workout logging, and team leaderboards.
