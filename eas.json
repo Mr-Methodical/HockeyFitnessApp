@@ -15,13 +15,7 @@
       "android": {
         "buildType": "app-bundle"
       },
-      "ios": {
-        "buildConfiguration": "Release"
-      },
-      "autoIncrement": true,
-      "cache": {
-        "disabled": false
-      }
+      "autoIncrement": true
     }
   },
   "submit": {
