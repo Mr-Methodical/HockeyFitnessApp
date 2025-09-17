@@ -1,0 +1,255 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    
+    // =======================
+    // USER DOCUMENTS
+    // =======================
+    match /users/{userId} {
+      // Users can only access their own profile
+      allow read, write: if request.auth != null && 
+        request.auth.uid == userId;
+      
+      // Validate user data structure on write
+      allow write: if request.auth != null && 
+        request.auth.uid == userId &&
+        validateUserData();
+    }
+    
+    // =======================
+    // TEAM DOCUMENTS  
+    // =======================
+    match /teams/{teamId} {
+      // Team members and coaches can read team data
+      allow read: if request.auth != null && 
+        (isTeamMember(teamId) || isCoach(teamId));
+      
+      // Only coaches can modify team settings
+      allow write: if request.auth != null && 
+        isCoach(teamId) &&
+        validateTeamData();
+      
+      // Allow team creation for authenticated users
+      allow create: if request.auth != null &&
+        request.auth.uid == request.resource.data.coachId &&
+        validateTeamData();
+    }
+    
+    // =======================
+    // WORKOUT DOCUMENTS
+    // =======================
+    match /workouts/{workoutId} {
+      // Users can read workouts from their team only
+      allow read: if request.auth != null && 
+        isTeamMember(resource.data.teamId);
+      
+      // Users can only create workouts for themselves on their team
+      allow create: if request.auth != null && 
+        request.auth.uid == request.resource.data.userId &&
+        isTeamMember(request.resource.data.teamId) &&
+        validateWorkoutData();
+      
+      // Users can update their own workouts or add likes from team members
+      allow update: if request.auth != null && 
+        ((request.auth.uid == resource.data.userId && 
+          isTeamMember(resource.data.teamId)) ||
+         (isTeamMember(resource.data.teamId) && 
+          onlyLikesChanged())) &&
+        validateWorkoutData();
+      
+      // Users can only delete their own workouts
+      allow delete: if request.auth != null && 
+        request.auth.uid == resource.data.userId &&
+        isTeamMember(resource.data.teamId);
+    }
+    
+    // =======================
+    // MESSAGE DOCUMENTS
+    // =======================
+    match /messages/{messageId} {
+      // Only team members can read messages
+      allow read: if request.auth != null && 
+        isTeamMember(resource.data.teamId);
+      
+      // Only team members can create messages for themselves
+      allow create: if request.auth != null && 
+        request.auth.uid == request.resource.data.senderId &&
+        isTeamMember(request.resource.data.teamId) &&
+        validateMessageData();
+      
+      // Messages cannot be updated or deleted (audit trail)
+      allow update, delete: if false;
+    }
+    
+    // =======================
+    // RANKING DOCUMENTS
+    // =======================
+    match /rankings/{rankingId} {
+      // Team members can read rankings
+      allow read: if request.auth != null && 
+        isTeamMember(resource.data.teamId);
+      
+      // Only coaches can create/update rankings
+      allow write: if request.auth != null && 
+        isCoach(resource.data.teamId) &&
+        validateRankingData();
+    }
+    
+    // =======================
+    // CHALLENGE DOCUMENTS
+    // =======================
+    match /challenges/{challengeId} {
+      // Team members can read challenges
+      allow read: if request.auth != null && 
+        isTeamMember(resource.data.teamId);
+      
+      // Only coaches can create challenges
+      allow create: if request.auth != null && 
+        isCoach(request.resource.data.teamId) &&
+        validateChallengeData();
+      
+      // Team members can update their participation, coaches can update everything
+      allow update: if request.auth != null && 
+        ((isCoach(resource.data.teamId) && validateChallengeData()) ||
+         (isTeamMember(resource.data.teamId) && onlyParticipationChanged())) &&
+        validateChallengeData();
+      
+      // Only coaches can delete challenges
+      allow delete: if request.auth != null && 
+        isCoach(resource.data.teamId);
+    }
+    
+    // =======================
+    // NOTIFICATION DOCUMENTS
+    // =======================
+    match /notifications/{notificationId} {
+      // Users can only read their own notifications
+      allow read: if request.auth != null && 
+        request.auth.uid == resource.data.userId;
+      
+      // System or coaches can create notifications
+      allow create: if request.auth != null && 
+        (request.auth.uid == request.resource.data.senderId || 
+         isCoach(request.resource.data.teamId)) &&
+        validateNotificationData();
+      
+      // Users can mark their own notifications as read
+      allow update: if request.auth != null && 
+        request.auth.uid == resource.data.userId &&
+        onlyReadStatusChanged();
+      
+      // Users can delete their own notifications
+      allow delete: if request.auth != null && 
+        request.auth.uid == resource.data.userId;
+    }
+    
+    // =======================
+    // HELPER FUNCTIONS
+    // =======================
+    
+    // Check if user is a member of the team
+    function isTeamMember(teamId) {
+      return teamId != null &&
+        exists(/databases/$(database)/documents/teams/$(teamId)) &&
+        (request.auth.uid in get(/databases/$(database)/documents/teams/$(teamId)).data.members ||
+         request.auth.uid == get(/databases/$(database)/documents/teams/$(teamId)).data.coachId);
+    }
+    
+    // Check if user is the coach of the team
+    function isCoach(teamId) {
+      return teamId != null &&
+        exists(/databases/$(database)/documents/teams/$(teamId)) &&
+        request.auth.uid == get(/databases/$(database)/documents/teams/$(teamId)).data.coachId;
+    }
+    
+    // Validate user data structure
+    function validateUserData() {
+      let data = request.resource.data;
+      return data.keys().hasAll(['name', 'email', 'role']) &&
+        data.role in ['coach', 'player'] &&
+        data.name is string &&
+        data.email is string &&
+        data.name.size() > 0 &&
+        data.email.size() > 0;
+    }
+    
+    // Validate team data structure
+    function validateTeamData() {
+      let data = request.resource.data;
+      return data.keys().hasAll(['name', 'coachId', 'code']) &&
+        data.name is string &&
+        data.coachId is string &&
+        data.code is string &&
+        data.name.size() > 0 &&
+        data.code.size() == 6;
+    }
+    
+    // Validate workout data structure
+    function validateWorkoutData() {
+      let data = request.resource.data;
+      return data.keys().hasAll(['userId', 'teamId', 'type', 'duration']) &&
+        data.userId is string &&
+        data.teamId is string &&
+        data.type is string &&
+        data.duration is number &&
+        data.duration > 0 &&
+        data.duration <= 480; // Max 8 hours
+    }
+    
+    // Validate message data structure
+    function validateMessageData() {
+      let data = request.resource.data;
+      return data.keys().hasAll(['senderId', 'teamId', 'content', 'timestamp']) &&
+        data.senderId is string &&
+        data.teamId is string &&
+        data.content is string &&
+        data.content.size() > 0 &&
+        data.content.size() <= 1000; // Max 1000 characters
+    }
+    
+    // Validate ranking data structure
+    function validateRankingData() {
+      let data = request.resource.data;
+      return data.keys().hasAll(['teamId', 'rankings']) &&
+        data.teamId is string &&
+        data.rankings is list;
+    }
+    
+    // Validate challenge data structure
+    function validateChallengeData() {
+      let data = request.resource.data;
+      return data.keys().hasAll(['teamId', 'title', 'description', 'startDate', 'endDate']) &&
+        data.teamId is string &&
+        data.title is string &&
+        data.description is string &&
+        data.title.size() > 0 &&
+        data.description.size() > 0;
+    }
+    
+    // Validate notification data structure
+    function validateNotificationData() {
+      let data = request.resource.data;
+      return data.keys().hasAll(['userId', 'title', 'message', 'timestamp']) &&
+        data.userId is string &&
+        data.title is string &&
+        data.message is string &&
+        data.title.size() > 0 &&
+        data.message.size() > 0;
+    }
+    
+    // Check if only likes field changed in workout
+    function onlyLikesChanged() {
+      return request.resource.data.diff(resource.data).affectedKeys().hasOnly(['likes', 'likeCount']);
+    }
+    
+    // Check if only participation changed in challenge
+    function onlyParticipationChanged() {
+      return request.resource.data.diff(resource.data).affectedKeys().hasOnly(['participants', 'participantCount']);
+    }
+    
+    // Check if only read status changed in notification
+    function onlyReadStatusChanged() {
+      return request.resource.data.diff(resource.data).affectedKeys().hasOnly(['read', 'readAt']);
+    }
+  }
+}

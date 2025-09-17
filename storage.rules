@@ -1,0 +1,39 @@
+rules_version = '2';
+
+// Firebase Storage Security Rules for Hockey Accountability App
+// Secure rules for production app store release
+
+service firebase.storage {
+  match /b/{bucket}/o {
+    
+    // Public workout images - readable by all, writable by no one
+    // These are pre-generated workout images that everyone can access
+    match /workouts/public/{imageId} {
+      allow read: if true;  // Public read access
+      allow write: if false; // No write access - images managed server-side only
+    }
+    
+    // User-specific workout images - users can upload and read their own images
+    // Path: workouts/<user_id>/<image_name>
+    match /workouts/{userId}/{imageId} {
+      // Allow authenticated users to read/write only their own images
+      allow read, write: if request.auth != null && request.auth.uid == userId;
+      
+      // Additional security checks for writes
+      allow write: if request.auth != null 
+                   && request.auth.uid == userId
+                   && request.resource.size < 10 * 1024 * 1024  // Max 10MB file size
+                   && request.resource.contentType.matches('image/.*'); // Only image files
+    }
+    
+    // Test folder for authenticated debugging (remove in production if not needed)
+    match /test/{testFile} {
+      allow read, write: if request.auth != null;
+    }
+    
+    // Deny all other access - explicitly block any other paths
+    match /{allPaths=**} {
+      allow read, write: if false;
+    }
+  }
+}

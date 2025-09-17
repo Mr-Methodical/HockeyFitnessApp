@@ -1,0 +1,41 @@
+// VERY LENIENT Firebase Storage Rules - FOR TESTING ONLY
+// Use these temporarily to see if rules are causing the upload error
+// REMOVE THESE AFTER TESTING - They allow anyone to upload anything!
+
+rules_version = '2';
+service firebase.storage {
+  match /b/{bucket}/o {
+    // Allow everything for authenticated users (VERY PERMISSIVE)
+    match /{allPaths=**} {
+      allow read, write: if request.auth != null;
+    }
+  }
+}
+
+// Alternative: EXTREMELY LENIENT (allows even unauthenticated access)
+// Only use this if the above doesn't work
+/*
+rules_version = '2';
+service firebase.storage {
+  match /b/{bucket}/o {
+    // Allow everything for everyone (NO SECURITY - TESTING ONLY!)
+    match /{allPaths=**} {
+      allow read, write;
+    }
+  }
+}
+*/
+
+// Alternative: MODERATELY LENIENT (removes size restrictions and specific paths)
+/*
+rules_version = '2';
+service firebase.storage {
+  match /b/{bucket}/o {
+    // Authenticated users can upload anywhere
+    match /{allPaths=**} {
+      allow read: if request.auth != null;
+      allow write: if request.auth != null;
+    }
+  }
+}
+*/

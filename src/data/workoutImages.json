@@ -1,0 +1,22 @@
+{
+  "publicImages": [
+    "https://firebasestorage.googleapis.com/v0/b/hockey-accountability.appspot.com/o/workouts%2Fpublic%2Fai_workout1.png?alt=media",
+    "https://firebasestorage.googleapis.com/v0/b/hockey-accountability.appspot.com/o/workouts%2Fpublic%2Fai_workout2.png?alt=media",
+    "https://firebasestorage.googleapis.com/v0/b/hockey-accountability.appspot.com/o/workouts%2Fpublic%2Fai_workout3.png?alt=media",
+    "https://firebasestorage.googleapis.com/v0/b/hockey-accountability.appspot.com/o/workouts%2Fpublic%2Fai_workout4.png?alt=media",
+    "https://firebasestorage.googleapis.com/v0/b/hockey-accountability.appspot.com/o/workouts%2Fpublic%2Fai_workout5.png?alt=media",
+    "https://firebasestorage.googleapis.com/v0/b/hockey-accountability.appspot.com/o/workouts%2Fpublic%2Fai_workout6.png?alt=media",
+    "https://firebasestorage.googleapis.com/v0/b/hockey-accountability.appspot.com/o/workouts%2Fpublic%2Fai_workout7.png?alt=media",
+    "https://firebasestorage.googleapis.com/v0/b/hockey-accountability.appspot.com/o/workouts%2Fpublic%2Fai_workout8.png?alt=media"
+  ],
+  "fallbackImages": [
+    "ai_workout1.png",
+    "ai_workout2.png", 
+    "ai_workout3.png",
+    "ai_workout4.png",
+    "ai_workout5.png",
+    "ai_workout6.png",
+    "ai_workout7.png",
+    "ai_workout8.png"
+  ]
+}

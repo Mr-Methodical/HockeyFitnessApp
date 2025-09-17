@@ -1,0 +1,35 @@
+// UPDATED Firebase Storage Security Rules
+// Deploy these rules to Firebase Console > Storage > Rules
+
+rules_version = '2';
+service firebase.storage {
+  match /b/{bucket}/o {
+    // Profile images
+    match /profile-images/{userId}/{allPaths=**} {
+      allow read, write: if request.auth != null && request.auth.uid == userId;
+    }
+    
+    // FIXED: Workout images (matches the path used in your code)
+    match /workouts/{userId}/{allPaths=**} {
+      allow read: if request.auth != null;
+      allow write: if request.auth != null && request.auth.uid == userId;
+      // Only allow image files up to 10MB
+      allow write: if request.auth != null && 
+                   request.auth.uid == userId &&
+                   resource.size < 10 * 1024 * 1024 &&
+                   resource.contentType.matches('image/.*');
+    }
+    
+    // Public workout images (everyone can read, no one can write)
+    match /workouts/public/{allPaths=**} {
+      allow read: if request.auth != null;
+      // Public images managed server-side only
+    }
+    
+    // AI generated images
+    match /ai-images/{allPaths=**} {
+      allow read: if request.auth != null;
+      // AI images are created server-side
+    }
+  }
+}

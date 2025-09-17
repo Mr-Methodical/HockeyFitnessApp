@@ -1,0 +1,93 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    
+    // Users can only read/write their own user document
+    match /users/{userId} {
+      allow read, write: if request.auth != null && request.auth.uid == userId;
+    }
+    
+    // Team documents - coaches can write, members can read
+    match /teams/{teamId} {
+      allow read: if request.auth != null && 
+        (request.auth.uid in resource.data.members || 
+         request.auth.uid == resource.data.coachId);
+      
+      allow write: if request.auth != null && 
+        request.auth.uid == resource.data.coachId;
+      
+      allow create: if request.auth != null;
+    }
+    
+    // Workouts - users can only create their own, team members can read team workouts
+    match /workouts/{workoutId} {
+      // Users can read workouts from their team
+      allow read: if request.auth != null && 
+        (request.auth.uid == resource.data.userId || 
+         isTeamMember(resource.data.teamId));
+      
+      // Users can only create workouts for themselves
+      allow create: if request.auth != null && 
+        request.auth.uid == request.resource.data.userId &&
+        isTeamMember(request.resource.data.teamId);
+      
+      // Users can only update their own workouts (for likes, etc.)
+      allow update: if request.auth != null && 
+        (request.auth.uid == resource.data.userId ||
+         isTeamMember(resource.data.teamId));
+      
+      // Users can only delete their own workouts
+      allow delete: if request.auth != null && 
+        request.auth.uid == resource.data.userId;
+    }
+    
+    // Messages - team members can read/write messages in their team
+    match /messages/{messageId} {
+      allow read, write: if request.auth != null && 
+        isTeamMember(resource.data.teamId);
+      
+      allow create: if request.auth != null && 
+        request.auth.uid == request.resource.data.senderId &&
+        isTeamMember(request.resource.data.teamId);
+    }
+    
+    // Rankings - coaches can write, team members can read
+    match /rankings/{rankingId} {
+      allow read: if request.auth != null && 
+        isTeamMember(resource.data.teamId);
+      
+      allow write: if request.auth != null && 
+        isCoach(resource.data.teamId);
+    }
+    
+    // Challenges - coaches can create, team members can read and update their participation
+    match /challenges/{challengeId} {
+      allow read: if request.auth != null && 
+        isTeamMember(resource.data.teamId);
+      
+      allow create: if request.auth != null && 
+        isCoach(request.resource.data.teamId);
+      
+      allow update: if request.auth != null && 
+        (isCoach(resource.data.teamId) || 
+         isTeamMember(resource.data.teamId));
+    }
+    
+    // Helper functions
+    function isTeamMember(teamId) {
+      return exists(/databases/$(database)/documents/teams/$(teamId)) &&
+        (request.auth.uid in get(/databases/$(database)/documents/teams/$(teamId)).data.members ||
+         request.auth.uid == get(/databases/$(database)/documents/teams/$(teamId)).data.coachId);
+    }
+    
+    function isCoach(teamId) {
+      return exists(/databases/$(database)/documents/teams/$(teamId)) &&
+        request.auth.uid == get(/databases/$(database)/documents/teams/$(teamId)).data.coachId;
+    }
+    
+    function isUserOnTeam(teamId) {
+      return exists(/databases/$(database)/documents/users/$(request.auth.uid)) &&
+        get(/databases/$(database)/documents/users/$(request.auth.uid)).data.teamId == teamId;
+    }
+  }
+}

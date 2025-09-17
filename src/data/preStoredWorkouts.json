@@ -1,0 +1,3267 @@
+{
+  "player": {
+    "hockey_conditioning": [
+      {
+        "id": "player_hockey_conditioning_1",
+        "title": "Ice Warrior Conditioning",
+        "description": "High-intensity hockey-specific conditioning workout focusing on explosive power and endurance",
+        "difficulty": "intermediate",
+        "estimatedDuration": "30-45 minutes",
+        "category": "Hockey Conditioning",
+        "focus": "hockey-specific",
+        "equipment": "minimal equipment",
+        "warmup": [
+          {
+            "exercise": "Hockey Skate Simulation",
+            "description": "Side-to-side steps simulating hockey skating motion, engaging core and legs",
+            "duration": "2 minutes",
+            "rest": "30 seconds",
+            "tips": "Keep knees bent, chest up, simulate the skating stride"
+          },
+          {
+            "exercise": "Stick Handling Arms",
+            "description": "Arm circles and crossovers mimicking stick handling movements",
+            "duration": "90 seconds",
+            "rest": "30 seconds", 
+            "tips": "Keep movements fluid, engage shoulders and core"
+          },
+          {
+            "exercise": "Hockey Lunges",
+            "description": "Forward and lateral lunges to activate leg muscles used in skating",
+            "duration": "2 minutes",
+            "rest": "45 seconds",
+            "tips": "Deep lunges, control the movement, feel the stretch"
+          }
+        ],
+        "mainWorkout": [
+          {
+            "exercise": "Power Stride Squats",
+            "description": "Deep squats with explosive upward movement simulating hockey acceleration",
+            "sets": "4",
+            "reps": "12-15",
+            "rest": "60 seconds",
+            "tips": "Explode up from the bottom, land softly"
+          },
+          {
+            "exercise": "Hockey Stop Holds",
+            "description": "Single-leg balance holds simulating the hockey stop position",
+            "sets": "3",
+            "reps": "30 seconds each leg",
+            "rest": "45 seconds",
+            "tips": "Engage core, keep knee aligned over toe"
+          },
+          {
+            "exercise": "Sprint Intervals",
+            "description": "High-intensity running intervals simulating game pace",
+            "sets": "6",
+            "reps": "30 seconds on, 30 seconds rest",
+            "rest": "Complete rest between intervals",
+            "tips": "All-out effort during work periods"
+          },
+          {
+            "exercise": "Puck Battle Push-ups",
+            "description": "Push-ups with hand placement changes simulating puck battles",
+            "sets": "3",
+            "reps": "10-12",
+            "rest": "60 seconds",
+            "tips": "Strong core, change hand positions between reps"
+          },
+          {
+            "exercise": "Slapshot Core Twists",
+            "description": "Rotational core exercises mimicking slapshot motion",
+            "sets": "3",
+            "reps": "15 each side",
+            "rest": "45 seconds",
+            "tips": "Control the rotation, feel it in your core"
+          }
+        ],
+        "cooldown": [
+          {
+            "exercise": "Hockey Hip Stretch",
+            "description": "Deep hip flexor and groin stretches important for hockey players",
+            "duration": "3 minutes",
+            "tips": "Hold each stretch for 30-45 seconds"
+          },
+          {
+            "exercise": "Skating Recovery Walk",
+            "description": "Slow walking with deep breathing to bring heart rate down",
+            "duration": "3 minutes",
+            "tips": "Focus on breathing and recovery"
+          }
+        ]
+      },
+      {
+        "id": "player_hockey_conditioning_2", 
+        "title": "Rink Ready Cardio Blast",
+        "description": "Intense cardiovascular workout designed for hockey game endurance",
+        "difficulty": "advanced",
+        "estimatedDuration": "45-60 minutes",
+        "category": "Hockey Conditioning",
+        "focus": "hockey-specific",
+        "equipment": "no equipment",
+        "warmup": [
+          {
+            "exercise": "Dynamic Hockey Warm-up",
+            "description": "Full body dynamic movements preparing for high intensity",
+            "duration": "5 minutes",
+            "rest": "None",
+            "tips": "Gradually increase intensity, activate all muscle groups"
+          }
+        ],
+        "mainWorkout": [
+          {
+            "exercise": "Hockey Suicide Sprints",
+            "description": "Progressive distance sprints simulating shift changes",
+            "sets": "5",
+            "reps": "Line to line progression",
+            "rest": "90 seconds",
+            "tips": "Touch each line, explosive starts and stops"
+          },
+          {
+            "exercise": "Goalie Butterfly Jumps",
+            "description": "Low squat jumps simulating goalie butterfly saves",
+            "sets": "4",
+            "reps": "20",
+            "rest": "60 seconds",
+            "tips": "Stay low, quick explosive movements"
+          },
+          {
+            "exercise": "Power Play Burpees",
+            "description": "Modified burpees with hockey-specific movements",
+            "sets": "3",
+            "reps": "10",
+            "rest": "90 seconds",
+            "tips": "Add stick handling motion during the pushup"
+          }
+        ],
+        "cooldown": [
+          {
+            "exercise": "Post-Game Stretch",
+            "description": "Comprehensive stretching routine for hockey players",
+            "duration": "10 minutes",
+            "tips": "Focus on hips, groin, and shoulders"
+          }
+        ]
+      },
+      {
+        "id": "player_hockey_conditioning_3",
+        "title": "Elite Hockey Endurance",
+        "description": "Advanced conditioning workout for elite hockey performance and stamina",
+        "difficulty": "beginner",
+        "estimatedDuration": "15-20 minutes",
+        "category": "Hockey Conditioning",
+        "focus": "hockey-specific",
+        "equipment": "full gym access",
+        "warmup": [
+          {
+            "exercise": "Ice Surface Prep",
+            "description": "Dynamic warm-up movements preparing body for intense hockey training",
+            "duration": "3 minutes",
+            "rest": "30 seconds",
+            "tips": "Focus on hockey-specific movement patterns"
+          },
+          {
+            "exercise": "Power Skating Simulation",
+            "description": "Side-to-side movements mimicking powerful skating strides",
+            "duration": "2 minutes",
+            "rest": "30 seconds",
+            "tips": "Deep knee bend, powerful push-off motion"
+          }
+        ],
+        "mainWorkout": [
+          {
+            "exercise": "Shift Change Sprints",
+            "description": "Short burst sprints simulating line changes during game play",
+            "sets": "6",
+            "reps": "15 seconds",
+            "rest": "45 seconds",
+            "tips": "Maximum intensity, simulate game urgency"
+          },
+          {
+            "exercise": "Stick Check Resistance",
+            "description": "Core and arm exercises simulating stick checking and puck protection",
+            "sets": "4",
+            "reps": "12",
+            "rest": "60 seconds",
+            "tips": "Engage core, maintain balance and control"
+          },
+          {
+            "exercise": "Breakout Burpees",
+            "description": "Hockey-specific burpees with explosive breakout movements",
+            "sets": "3",
+            "reps": "8-10",
+            "rest": "90 seconds",
+            "tips": "Quick transitions, think fast breakout passes"
+          }
+        ],
+        "cooldown": [
+          {
+            "exercise": "Between Periods Recovery",
+            "description": "Active recovery like players use between periods",
+            "duration": "4 minutes",
+            "tips": "Light movement, focus on breathing and recovery"
+          }
+        ]
+      },
+      {
+        "id": "player_hockey_conditioning_4",
+        "title": "Power Play Conditioning",
+        "description": "High-intensity workout focusing on power play endurance and explosiveness",
+        "difficulty": "intermediate",
+        "estimatedDuration": "30-45 minutes",
+        "category": "Hockey Conditioning",
+        "focus": "hockey-specific",
+        "equipment": "minimal equipment",
+        "warmup": [
+          {
+            "exercise": "Power Play Prep",
+            "description": "Dynamic movements preparing for high-intensity power play simulation",
+            "duration": "4 minutes",
+            "rest": "None",
+            "tips": "Build intensity gradually, activate all muscle groups"
+          }
+        ],
+        "mainWorkout": [
+          {
+            "exercise": "One-Timer Squats",
+            "description": "Explosive squats simulating one-timer shot preparation",
+            "sets": "4",
+            "reps": "15",
+            "rest": "60 seconds",
+            "tips": "Explosive up motion, imagine receiving a pass"
+          },
+          {
+            "exercise": "Cycling Lunges",
+            "description": "Lateral lunges simulating cycling movements in the offensive zone",
+            "sets": "3",
+            "reps": "12 each leg",
+            "rest": "45 seconds",
+            "tips": "Smooth transitions, maintain puck control posture"
+          },
+          {
+            "exercise": "Screen Battle Planks",
+            "description": "Plank variations simulating screening the goalie during power plays",
+            "sets": "3",
+            "reps": "45 seconds",
+            "rest": "60 seconds",
+            "tips": "Hold position strong, resist defensive pressure"
+          }
+        ],
+        "cooldown": [
+          {
+            "exercise": "Power Play Recovery",
+            "description": "Recovery stretching after intense power play simulation",
+            "duration": "5 minutes",
+            "tips": "Focus on legs and core recovery"
+          }
+        ]
+      },
+      {
+        "id": "player_hockey_conditioning_5",
+        "title": "Penalty Kill Warrior",
+        "description": "Defensive conditioning workout simulating penalty kill intensity",
+        "difficulty": "advanced",
+        "estimatedDuration": "45-60 minutes",
+        "category": "Hockey Conditioning",
+        "focus": "hockey-specific",
+        "equipment": "no equipment",
+        "warmup": [
+          {
+            "exercise": "Defensive Stance Prep",
+            "description": "Preparation movements for defensive hockey positioning",
+            "duration": "3 minutes",
+            "rest": "30 seconds",
+            "tips": "Low stance, active feet, defensive mindset"
+          },
+          {
+            "exercise": "Stick Positioning",
+            "description": "Arm and core activation for defensive stick work",
+            "duration": "2 minutes",
+            "rest": "30 seconds",
+            "tips": "Keep stick active, engage core for stability"
+          }
+        ],
+        "mainWorkout": [
+          {
+            "exercise": "Penalty Kill Shuffles",
+            "description": "Lateral shuffling movements simulating penalty kill coverage",
+            "sets": "5",
+            "reps": "30 seconds",
+            "rest": "30 seconds",
+            "tips": "Stay low, quick feet, maintain gap control"
+          },
+          {
+            "exercise": "Shot Block Squats",
+            "description": "Deep squats simulating shot blocking position and recovery",
+            "sets": "4",
+            "reps": "12",
+            "rest": "60 seconds",
+            "tips": "Low position, quick recovery, brave mindset"
+          },
+          {
+            "exercise": "Clearance Burpees",
+            "description": "Burpees with clearing motion simulating defensive zone clearances",
+            "sets": "3",
+            "reps": "8",
+            "rest": "90 seconds",
+            "tips": "Strong clearing motion, get puck deep"
+          }
+        ],
+        "cooldown": [
+          {
+            "exercise": "Defensive Recovery",
+            "description": "Recovery routine after intense defensive work",
+            "duration": "6 minutes",
+            "tips": "Decompress from defensive intensity, breathe deeply"
+          }
+        ]
+      },
+      {
+        "id": "player_hockey_conditioning_6",
+        "title": "Overtime Intensity",
+        "description": "Maximum intensity conditioning simulating overtime hockey pressure",
+        "difficulty": "beginner",
+        "estimatedDuration": "15-20 minutes",
+        "category": "Hockey Conditioning",
+        "focus": "hockey-specific",
+        "equipment": "full gym access",
+        "warmup": [
+          {
+            "exercise": "Overtime Prep",
+            "description": "Quick but thorough warm-up for maximum intensity work",
+            "duration": "2 minutes",
+            "rest": "None",
+            "tips": "Get ready for maximum effort, championship mindset"
+          }
+        ],
+        "mainWorkout": [
+          {
+            "exercise": "Sudden Death Sprints",
+            "description": "All-out sprints simulating overtime urgency",
+            "sets": "5",
+            "reps": "20 seconds",
+            "rest": "60 seconds",
+            "tips": "Give everything, imagine the championship on the line"
+          },
+          {
+            "exercise": "Victory Drive Pushups",
+            "description": "Explosive pushups simulating the drive to score the winning goal",
+            "sets": "3",
+            "reps": "10",
+            "rest": "45 seconds",
+            "tips": "Explosive power, drive toward victory"
+          },
+          {
+            "exercise": "Championship Squats",
+            "description": "Deep squats with the intensity worthy of championship play",
+            "sets": "3",
+            "reps": "15",
+            "rest": "60 seconds",
+            "tips": "Deep and powerful, championship effort"
+          }
+        ],
+        "cooldown": [
+          {
+            "exercise": "Victory Celebration",
+            "description": "Cool down while imagining the victory celebration",
+            "duration": "3 minutes",
+            "tips": "You gave your all, celebrate the effort"
+          }
+        ]
+      },
+      {
+        "id": "player_hockey_conditioning_7",
+        "title": "Playoff Warrior Training",
+        "description": "Grueling conditioning workout built for playoff hockey intensity",
+        "difficulty": "intermediate",
+        "estimatedDuration": "30-45 minutes",
+        "category": "Hockey Conditioning",
+        "focus": "hockey-specific",
+        "equipment": "minimal equipment",
+        "warmup": [
+          {
+            "exercise": "Playoff Intensity Warm-up",
+            "description": "Preparation for the intensity and pressure of playoff hockey",
+            "duration": "4 minutes",
+            "rest": "30 seconds",
+            "tips": "Mental preparation, embrace the pressure"
+          },
+          {
+            "exercise": "Battle Ready Movements",
+            "description": "Dynamic movements preparing for physical playoff battles",
+            "duration": "3 minutes",
+            "rest": "30 seconds",
+            "tips": "Activate muscles for contact and competition"
+          }
+        ],
+        "mainWorkout": [
+          {
+            "exercise": "Battle Zone Squats",
+            "description": "Squats simulating battles in front of the net and along the boards",
+            "sets": "4",
+            "reps": "12-15",
+            "rest": "60 seconds",
+            "tips": "Strong base, ready for contact and competition"
+          },
+          {
+            "exercise": "Playoff Push Intervals",
+            "description": "High-intensity intervals simulating playoff shift intensity",
+            "sets": "6",
+            "reps": "45 seconds on, 45 seconds rest",
+            "rest": "Complete rest between intervals",
+            "tips": "Playoff intensity, every shift matters"
+          },
+          {
+            "exercise": "Stanley Cup Core",
+            "description": "Core strengthening worthy of hoisting the Stanley Cup",
+            "sets": "3",
+            "reps": "30 seconds",
+            "rest": "45 seconds",
+            "tips": "Strong core for the ultimate prize"
+          }
+        ],
+        "cooldown": [
+          {
+            "exercise": "Playoff Recovery",
+            "description": "Recovery process between playoff games",
+            "duration": "6 minutes",
+            "tips": "Recover like a champion, prepare for the next battle"
+          }
+        ]
+      },
+      {
+        "id": "player_hockey_conditioning_8",
+        "title": "Rookie Development Camp",
+        "description": "Fundamental conditioning for developing hockey players and beginners",
+        "difficulty": "advanced",
+        "estimatedDuration": "45-60 minutes",
+        "category": "Hockey Conditioning",
+        "focus": "hockey-specific",
+        "equipment": "no equipment",
+        "warmup": [
+          {
+            "exercise": "Hockey Fundamentals Warm-up",
+            "description": "Basic hockey movement patterns for skill development",
+            "duration": "5 minutes",
+            "rest": "None",
+            "tips": "Focus on proper form and technique"
+          }
+        ],
+        "mainWorkout": [
+          {
+            "exercise": "First Stride Development",
+            "description": "Exercises to develop powerful first steps and acceleration",
+            "sets": "4",
+            "reps": "10 explosive starts",
+            "rest": "90 seconds",
+            "tips": "Focus on explosion and proper mechanics"
+          },
+          {
+            "exercise": "Basic Puck Protection",
+            "description": "Core and balance work simulating fundamental puck protection",
+            "sets": "3",
+            "reps": "45 seconds",
+            "rest": "60 seconds",
+            "tips": "Strong core, protect the puck, keep head up"
+          },
+          {
+            "exercise": "Hockey Stop Practice",
+            "description": "Single-leg balance and control exercises for hockey stops",
+            "sets": "3",
+            "reps": "30 seconds each leg",
+            "rest": "45 seconds",
+            "tips": "Control and balance, master the fundamentals"
+          }
+        ],
+        "cooldown": [
+          {
+            "exercise": "Development Recovery",
+            "description": "Recovery and reflection on skill development",
+            "duration": "8 minutes",
+            "tips": "Reflect on progress, consistent improvement"
+          }
+        ]
+      },
+      {
+        "id": "player_hockey_conditioning_9",
+        "title": "Championship Circuit",
+        "description": "Elite circuit training designed for championship-level hockey performance",
+        "difficulty": "beginner",
+        "estimatedDuration": "15-20 minutes",
+        "category": "Hockey Conditioning",
+        "focus": "hockey-specific",
+        "equipment": "full gym access",
+        "warmup": [
+          {
+            "exercise": "Championship Prep",
+            "description": "Elite-level preparation for championship training",
+            "duration": "3 minutes",
+            "rest": "30 seconds",
+            "tips": "Elite mindset, prepare for excellence"
+          }
+        ],
+        "mainWorkout": [
+          {
+            "exercise": "Elite Sprint Circuit",
+            "description": "Multi-directional sprints at championship intensity",
+            "sets": "5",
+            "reps": "Circuit of 4 movements",
+            "rest": "90 seconds",
+            "tips": "Championship speed, elite execution"
+          },
+          {
+            "exercise": "Power Circuit Squats",
+            "description": "Explosive squat variations in circuit format",
+            "sets": "4",
+            "reps": "Circuit of 3 variations",
+            "rest": "60 seconds",
+            "tips": "Explosive power, championship strength"
+          },
+          {
+            "exercise": "Elite Core Circuit",
+            "description": "Advanced core circuit for elite hockey performance",
+            "sets": "3",
+            "reps": "Circuit of 4 exercises",
+            "rest": "75 seconds",
+            "tips": "Elite core strength, championship stability"
+          }
+        ],
+        "cooldown": [
+          {
+            "exercise": "Elite Recovery",
+            "description": "Championship-level recovery protocols",
+            "duration": "5 minutes",
+            "tips": "Recover like a champion, elite standards"
+          }
+        ]
+      },
+      {
+        "id": "player_hockey_conditioning_10",
+        "title": "Hall of Fame Finisher",
+        "description": "Legendary conditioning workout for Hall of Fame level hockey performance",
+        "difficulty": "intermediate",
+        "estimatedDuration": "30-45 minutes",
+        "category": "Hockey Conditioning",
+        "focus": "hockey-specific",
+        "equipment": "minimal equipment",
+        "warmup": [
+          {
+            "exercise": "Legend Preparation",
+            "description": "Warm-up routine worthy of hockey legends",
+            "duration": "4 minutes",
+            "rest": "30 seconds",
+            "tips": "Prepare with the dedication of legends"
+          },
+          {
+            "exercise": "Hall of Fame Activation",
+            "description": "Activation movements for legendary performance",
+            "duration": "3 minutes",
+            "rest": "30 seconds",
+            "tips": "Activate every muscle for greatness"
+          }
+        ],
+        "mainWorkout": [
+          {
+            "exercise": "Legendary Sprint Intervals",
+            "description": "Sprint intervals at the intensity of hockey legends",
+            "sets": "6",
+            "reps": "30 seconds all-out",
+            "rest": "60 seconds",
+            "tips": "Legendary effort, leave everything on the ice"
+          },
+          {
+            "exercise": "Hall of Fame Squats",
+            "description": "Squat variations worthy of Hall of Fame recognition",
+            "sets": "4",
+            "reps": "15 explosive reps",
+            "rest": "75 seconds",
+            "tips": "Hall of Fame power in every rep"
+          },
+          {
+            "exercise": "Legacy Core Work",
+            "description": "Core strengthening that builds a lasting legacy",
+            "sets": "3",
+            "reps": "60 seconds",
+            "rest": "60 seconds",
+            "tips": "Build the core strength of legends"
+          }
+        ],
+        "cooldown": [
+          {
+            "exercise": "Legacy Recovery",
+            "description": "Recovery routine that honors the work of legends",
+            "duration": "7 minutes",
+            "tips": "Recover with the wisdom of champions"
+          }
+        ]
+      }
+    ],
+    "strength_training": [
+      {
+        "id": "player_strength_training_1",
+        "title": "Hockey Power Builder",
+        "description": "Functional strength training focused on hockey-specific power development",
+        "difficulty": "intermediate", 
+        "estimatedDuration": "45-60 minutes",
+        "category": "Strength Training",
+        "focus": "strength training",
+        "equipment": "full gym access",
+        "warmup": [
+          {
+            "exercise": "Dynamic Movement Prep",
+            "description": "Joint mobility and activation exercises",
+            "duration": "5 minutes",
+            "rest": "None",
+            "tips": "Focus on hips, shoulders, and ankles"
+          }
+        ],
+        "mainWorkout": [
+          {
+            "exercise": "Goblet Squats",
+            "description": "Deep squats holding weight at chest, building leg and core strength",
+            "sets": "4",
+            "reps": "12-15",
+            "rest": "90 seconds",
+            "tips": "Chest up, weight in heels, full depth"
+          },
+          {
+            "exercise": "Single-Arm Rows",
+            "description": "Unilateral pulling exercise for back strength and stability",
+            "sets": "3",
+            "reps": "10 each arm",
+            "rest": "60 seconds",
+            "tips": "Pull elbow back, squeeze shoulder blade"
+          },
+          {
+            "exercise": "Push-up Variations",
+            "description": "Multiple push-up styles for complete chest and arm development",
+            "sets": "3",
+            "reps": "8-12",
+            "rest": "60 seconds",
+            "tips": "Maintain straight line from head to toe"
+          }
+        ],
+        "cooldown": [
+          {
+            "exercise": "Strength Recovery Stretch",
+            "description": "Targeted stretching for muscles worked",
+            "duration": "8 minutes",
+            "tips": "Hold stretches longer after strength training"
+          }
+        ]
+      },
+      {
+        "id": "player_strength_training_2",
+        "title": "Iron Warrior Strength",
+        "description": "Heavy-duty strength training for maximum hockey power development",
+        "difficulty": "advanced",
+        "estimatedDuration": "45-60 minutes",
+        "category": "Strength Training",
+        "focus": "strength training",
+        "equipment": "no equipment",
+        "warmup": [
+          {
+            "exercise": "Power Activation",
+            "description": "Full body activation for maximum strength output",
+            "duration": "5 minutes",
+            "rest": "None",
+            "tips": "Prepare for heavy lifting, activate all power systems"
+          }
+        ],
+        "mainWorkout": [
+          {
+            "exercise": "Goalie Save Squats",
+            "description": "Deep squats simulating goalie butterfly saves with explosive returns",
+            "sets": "5",
+            "reps": "8-10",
+            "rest": "120 seconds",
+            "tips": "Deep position, explosive return to standing"
+          },
+          {
+            "exercise": "Slapshot Push-ups",
+            "description": "Explosive push-ups mimicking the power transfer of slapshots",
+            "sets": "4",
+            "reps": "8-12",
+            "rest": "90 seconds",
+            "tips": "Explosive concentric, controlled eccentric"
+          },
+          {
+            "exercise": "Body Check Planks",
+            "description": "Isometric core holds simulating resistance to body checks",
+            "sets": "3",
+            "reps": "60 seconds",
+            "rest": "75 seconds",
+            "tips": "Rigid core, resist all forces"
+          }
+        ],
+        "cooldown": [
+          {
+            "exercise": "Power Recovery",
+            "description": "Recovery routine after maximum strength work",
+            "duration": "10 minutes",
+            "tips": "Focus on major muscle groups, deep recovery"
+          }
+        ]
+      },
+      {
+        "id": "player_strength_training_3",
+        "title": "Power Forward Domination",
+        "description": "Strength training focused on power forward positioning and net-front presence",
+        "difficulty": "beginner",
+        "estimatedDuration": "15-20 minutes",
+        "category": "Strength Training",
+        "focus": "strength training",
+        "equipment": "full gym access",
+        "warmup": [
+          {
+            "exercise": "Net Front Preparation",
+            "description": "Activation for battle-ready power forward training",
+            "duration": "3 minutes",
+            "rest": "30 seconds",
+            "tips": "Prepare for contact, activate stabilizing muscles"
+          }
+        ],
+        "mainWorkout": [
+          {
+            "exercise": "Traffic Squats",
+            "description": "Squats while maintaining balance, simulating net-front battles",
+            "sets": "4",
+            "reps": "12",
+            "rest": "60 seconds",
+            "tips": "Maintain position under pressure, strong base"
+          },
+          {
+            "exercise": "Screen Push-ups",
+            "description": "Push-ups with emphasis on holding position against resistance",
+            "sets": "3",
+            "reps": "8-10",
+            "rest": "60 seconds",
+            "tips": "Hold positions, resist being moved"
+          },
+          {
+            "exercise": "Rebound Lunges",
+            "description": "Lateral lunges simulating positioning for rebounds",
+            "sets": "3",
+            "reps": "10 each leg",
+            "rest": "45 seconds",
+            "tips": "Quick positioning, ready for puck pursuit"
+          }
+        ],
+        "cooldown": [
+          {
+            "exercise": "Power Forward Recovery",
+            "description": "Recovery after intense positional training",
+            "duration": "4 minutes",
+            "tips": "Release tension from battle positions"
+          }
+        ]
+      },
+      {
+        "id": "player_strength_training_4",
+        "title": "Defenseman Fortress",
+        "description": "Defensive strength training for solid positioning and clearing power",
+        "difficulty": "intermediate",
+        "estimatedDuration": "30-45 minutes",
+        "category": "Strength Training",
+        "focus": "strength training",
+        "equipment": "minimal equipment",
+        "warmup": [
+          {
+            "exercise": "Blue Line Prep",
+            "description": "Preparation for defensive strength and positioning work",
+            "duration": "4 minutes",
+            "rest": "None",
+            "tips": "Activate posterior chain, prepare for defensive stance"
+          }
+        ],
+        "mainWorkout": [
+          {
+            "exercise": "Gap Control Squats",
+            "description": "Controlled squats emphasizing defensive positioning and gap control",
+            "sets": "4",
+            "reps": "12-15",
+            "rest": "75 seconds",
+            "tips": "Controlled descent, maintain defensive posture"
+          },
+          {
+            "exercise": "Clearing Push-ups",
+            "description": "Push-ups with clearing motion, simulating zone clearances",
+            "sets": "3",
+            "reps": "10-12",
+            "rest": "60 seconds",
+            "tips": "Strong push-off, imagine clearing the zone"
+          },
+          {
+            "exercise": "Point Shot Planks",
+            "description": "Core stabilization for powerful point shots and defensive stance",
+            "sets": "3",
+            "reps": "45 seconds",
+            "rest": "60 seconds",
+            "tips": "Solid base for powerful shots from the point"
+          }
+        ],
+        "cooldown": [
+          {
+            "exercise": "Defensive Recovery",
+            "description": "Recovery focusing on defensive muscle groups",
+            "duration": "6 minutes",
+            "tips": "Stretch major defensive movement patterns"
+          }
+        ]
+      },
+      {
+        "id": "player_strength_training_5",
+        "title": "Captain's Leadership Strength",
+        "description": "Elite strength training worthy of team leadership and championship play",
+        "difficulty": "advanced",
+        "estimatedDuration": "45-60 minutes",
+        "category": "Strength Training",
+        "focus": "strength training",
+        "equipment": "no equipment",
+        "warmup": [
+          {
+            "exercise": "Leadership Preparation",
+            "description": "Comprehensive warm-up for elite-level strength training",
+            "duration": "6 minutes",
+            "rest": "None",
+            "tips": "Prepare with the intensity of a team captain"
+          }
+        ],
+        "mainWorkout": [
+          {
+            "exercise": "Captain's Squats",
+            "description": "Advanced squat variations demonstrating leadership-level strength",
+            "sets": "5",
+            "reps": "10-12",
+            "rest": "90 seconds",
+            "tips": "Lead by example, demonstrate elite strength"
+          },
+          {
+            "exercise": "Leadership Push-ups",
+            "description": "Push-up progressions that build captain-level upper body strength",
+            "sets": "4",
+            "reps": "12-15",
+            "rest": "75 seconds",
+            "tips": "Set the standard, captain-level execution"
+          },
+          {
+            "exercise": "Championship Core",
+            "description": "Elite core training for championship-level performance",
+            "sets": "4",
+            "reps": "60 seconds",
+            "rest": "60 seconds",
+            "tips": "Championship core strength, lead the team"
+          }
+        ],
+        "cooldown": [
+          {
+            "exercise": "Leadership Recovery",
+            "description": "Recovery routine fitting for team leadership",
+            "duration": "8 minutes",
+            "tips": "Recover like a champion, maintain leadership standards"
+          }
+        ]
+      },
+      {
+        "id": "player_strength_training_6",
+        "title": "Rookie Strength Foundation",
+        "description": "Fundamental strength building for developing hockey players",
+        "difficulty": "beginner",
+        "estimatedDuration": "15-20 minutes",
+        "category": "Strength Training",
+        "focus": "strength training",
+        "equipment": "full gym access",
+        "warmup": [
+          {
+            "exercise": "Foundation Building Prep",
+            "description": "Basic preparation for fundamental strength development",
+            "duration": "3 minutes",
+            "rest": "30 seconds",
+            "tips": "Focus on proper form and technique foundation"
+          }
+        ],
+        "mainWorkout": [
+          {
+            "exercise": "Basic Hockey Squats",
+            "description": "Fundamental squats building basic hockey strength patterns",
+            "sets": "3",
+            "reps": "10-12",
+            "rest": "60 seconds",
+            "tips": "Master the basics, build proper movement patterns"
+          },
+          {
+            "exercise": "Starter Push-ups",
+            "description": "Progressive push-ups for building basic upper body strength",
+            "sets": "3",
+            "reps": "6-10",
+            "rest": "60 seconds",
+            "tips": "Quality over quantity, perfect technique"
+          },
+          {
+            "exercise": "Core Fundamentals",
+            "description": "Basic core strengthening for hockey stability",
+            "sets": "3",
+            "reps": "30 seconds",
+            "rest": "45 seconds",
+            "tips": "Build core foundation, stability first"
+          }
+        ],
+        "cooldown": [
+          {
+            "exercise": "Development Recovery",
+            "description": "Recovery and reflection on strength development",
+            "duration": "5 minutes",
+            "tips": "Focus on improvement, build consistency"
+          }
+        ]
+      },
+      {
+        "id": "player_strength_training_7",
+        "title": "Playoff Power Training",
+        "description": "Intense strength training designed for playoff hockey demands",
+        "difficulty": "intermediate",
+        "estimatedDuration": "30-45 minutes",
+        "category": "Strength Training",
+        "focus": "strength training",
+        "equipment": "minimal equipment",
+        "warmup": [
+          {
+            "exercise": "Playoff Intensity Prep",
+            "description": "Preparation for playoff-level strength demands",
+            "duration": "5 minutes",
+            "rest": "None",
+            "tips": "Prepare for the intensity of playoff hockey"
+          }
+        ],
+        "mainWorkout": [
+          {
+            "exercise": "Playoff Battle Squats",
+            "description": "Squats simulating the physical demands of playoff hockey",
+            "sets": "4",
+            "reps": "12-15",
+            "rest": "75 seconds",
+            "tips": "Playoff intensity, every rep matters"
+          },
+          {
+            "exercise": "Championship Push-ups",
+            "description": "Push-ups with the determination of championship pursuit",
+            "sets": "3",
+            "reps": "10-12",
+            "rest": "70 seconds",
+            "tips": "Championship effort, drive toward the Cup"
+          },
+          {
+            "exercise": "Stanley Cup Core",
+            "description": "Core work worthy of Stanley Cup championship",
+            "sets": "3",
+            "reps": "45 seconds",
+            "rest": "60 seconds",
+            "tips": "Core strength for the ultimate prize"
+          }
+        ],
+        "cooldown": [
+          {
+            "exercise": "Playoff Recovery",
+            "description": "Recovery between playoff training sessions",
+            "duration": "7 minutes",
+            "tips": "Recover smart, prepare for the next battle"
+          }
+        ]
+      },
+      {
+        "id": "player_strength_training_8",
+        "title": "Power Play Muscle Builder",
+        "description": "Strength training optimized for power play effectiveness and net presence",
+        "difficulty": "advanced",
+        "estimatedDuration": "45-60 minutes",
+        "category": "Strength Training",
+        "focus": "strength training",
+        "equipment": "no equipment",
+        "warmup": [
+          {
+            "exercise": "Power Play Activation",
+            "description": "Activation for power play strength and positioning",
+            "duration": "4 minutes",
+            "rest": "30 seconds",
+            "tips": "Prepare for power play positioning demands"
+          }
+        ],
+        "mainWorkout": [
+          {
+            "exercise": "One-Timer Squats",
+            "description": "Explosive squats simulating one-timer setup and execution",
+            "sets": "5",
+            "reps": "8-10",
+            "rest": "90 seconds",
+            "tips": "Explosive power for one-timer opportunities"
+          },
+          {
+            "exercise": "Screen Push-ups",
+            "description": "Push-ups emphasizing holding position under defensive pressure",
+            "sets": "4",
+            "reps": "10-12",
+            "rest": "75 seconds",
+            "tips": "Hold the screen, resist defensive pressure"
+          },
+          {
+            "exercise": "Power Play Planks",
+            "description": "Isometric holds simulating power play positioning strength",
+            "sets": "3",
+            "reps": "60 seconds",
+            "rest": "70 seconds",
+            "tips": "Strong positioning for power play success"
+          }
+        ],
+        "cooldown": [
+          {
+            "exercise": "Power Play Recovery",
+            "description": "Recovery after intense power play training",
+            "duration": "8 minutes",
+            "tips": "Recover strength for next power play opportunity"
+          }
+        ]
+      },
+      {
+        "id": "player_strength_training_9",
+        "title": "Overtime Warrior Strength",
+        "description": "Maximum strength training for overtime hockey situations",
+        "difficulty": "beginner",
+        "estimatedDuration": "15-20 minutes",
+        "category": "Strength Training",
+        "focus": "strength training",
+        "equipment": "full gym access",
+        "warmup": [
+          {
+            "exercise": "Overtime Readiness",
+            "description": "Quick but thorough preparation for maximum strength output",
+            "duration": "2 minutes",
+            "rest": "None",
+            "tips": "Get ready for championship moments"
+          }
+        ],
+        "mainWorkout": [
+          {
+            "exercise": "Sudden Death Squats",
+            "description": "All-out squat effort simulating overtime urgency",
+            "sets": "4",
+            "reps": "10",
+            "rest": "60 seconds",
+            "tips": "Give everything, imagine the game on the line"
+          },
+          {
+            "exercise": "Victory Push-ups",
+            "description": "Push-ups with the drive to score the game-winning goal",
+            "sets": "3",
+            "reps": "8-10",
+            "rest": "60 seconds",
+            "tips": "Push for victory, championship mindset"
+          },
+          {
+            "exercise": "Game Winner Core",
+            "description": "Core strength for game-winning performances",
+            "sets": "3",
+            "reps": "40 seconds",
+            "rest": "50 seconds",
+            "tips": "Core strength for clutch moments"
+          }
+        ],
+        "cooldown": [
+          {
+            "exercise": "Victory Recovery",
+            "description": "Recovery after giving everything in overtime",
+            "duration": "4 minutes",
+            "tips": "Celebrate the effort, you gave your all"
+          }
+        ]
+      },
+      {
+        "id": "player_strength_training_10",
+        "title": "Hall of Fame Strength Legacy",
+        "description": "Legendary strength training worthy of Hall of Fame recognition",
+        "difficulty": "intermediate",
+        "estimatedDuration": "30-45 minutes",
+        "category": "Strength Training",
+        "focus": "strength training",
+        "equipment": "minimal equipment",
+        "warmup": [
+          {
+            "exercise": "Legacy Preparation",
+            "description": "Preparation for Hall of Fame level strength training",
+            "duration": "5 minutes",
+            "rest": "30 seconds",
+            "tips": "Prepare with the dedication of legends"
+          }
+        ],
+        "mainWorkout": [
+          {
+            "exercise": "Legendary Squats",
+            "description": "Squat variations worthy of hockey legends",
+            "sets": "4",
+            "reps": "12-15",
+            "rest": "80 seconds",
+            "tips": "Legendary strength in every repetition"
+          },
+          {
+            "exercise": "Hall of Fame Push-ups",
+            "description": "Push-ups executed with Hall of Fame precision and power",
+            "sets": "4",
+            "reps": "10-12",
+            "rest": "70 seconds",
+            "tips": "Hall of Fame technique, legendary strength"
+          },
+          {
+            "exercise": "Legacy Core Work",
+            "description": "Core training that builds a lasting strength legacy",
+            "sets": "3",
+            "reps": "50 seconds",
+            "rest": "65 seconds",
+            "tips": "Build core strength that lasts a lifetime"
+          }
+        ],
+        "cooldown": [
+          {
+            "exercise": "Hall of Fame Recovery",
+            "description": "Recovery routine honoring the work of legends",
+            "duration": "8 minutes",
+            "tips": "Recover with the wisdom of Hall of Famers"
+          }
+        ]
+      }
+    ],
+    "speed_agility": [
+      {
+        "id": "player_speed_agility_1",
+        "title": "Lightning Fast Hockey Drills",
+        "description": "Explosive speed and agility training for quick directional changes",
+        "difficulty": "intermediate",
+        "estimatedDuration": "30-45 minutes", 
+        "category": "Speed & Agility",
+        "focus": "speed and agility",
+        "equipment": "minimal equipment",
+        "warmup": [
+          {
+            "exercise": "Activation Drills",
+            "description": "High knees, butt kicks, and leg swings to activate muscles",
+            "duration": "4 minutes",
+            "rest": "None",
+            "tips": "Start slow, gradually increase tempo"
+          }
+        ],
+        "mainWorkout": [
+          {
+            "exercise": "Ladder Drills",
+            "description": "Quick feet drills using agility ladder or imaginary rungs",
+            "sets": "4",
+            "reps": "30 seconds",
+            "rest": "60 seconds",
+            "tips": "Stay on balls of feet, quick light steps"
+          },
+          {
+            "exercise": "Cone Weaving",
+            "description": "Sharp cuts and direction changes around cones",
+            "sets": "5",
+            "reps": "2 rounds",
+            "rest": "90 seconds",
+            "tips": "Low center of gravity, plant and cut"
+          }
+        ],
+        "cooldown": [
+          {
+            "exercise": "Speed Recovery",
+            "description": "Light movement and stretching to prevent tightness",
+            "duration": "5 minutes",
+            "tips": "Focus on leg and hip flexibility"
+          }
+        ]
+      },
+      {
+        "id": "player_speed_agility_2",
+        "title": "Breakaway Speed Master",
+        "description": "Elite speed training for breakaway opportunities and explosive acceleration",
+        "difficulty": "advanced",
+        "estimatedDuration": "45-60 minutes",
+        "category": "Speed & Agility",
+        "focus": "speed and agility",
+        "equipment": "no equipment",
+        "warmup": [
+          {
+            "exercise": "Speed Preparation",
+            "description": "Dynamic warm-up for maximum speed output",
+            "duration": "5 minutes",
+            "rest": "None",
+            "tips": "Prepare nervous system for explosive speed work"
+          }
+        ],
+        "mainWorkout": [
+          {
+            "exercise": "Breakaway Sprints",
+            "description": "All-out sprints simulating breakaway opportunities",
+            "sets": "6",
+            "reps": "20 meters",
+            "rest": "2 minutes",
+            "tips": "Maximum speed, imagine scoring the winning goal"
+          },
+          {
+            "exercise": "First Step Explosions",
+            "description": "Explosive first step drills for immediate acceleration",
+            "sets": "5",
+            "reps": "5 explosive starts",
+            "rest": "90 seconds",
+            "tips": "Explosive first movement, beat the defender"
+          },
+          {
+            "exercise": "Speed Change Cuts",
+            "description": "Sharp directional changes at high speed",
+            "sets": "4",
+            "reps": "8 cuts",
+            "rest": "75 seconds",
+            "tips": "Sharp cuts, maintain speed through direction changes"
+          }
+        ],
+        "cooldown": [
+          {
+            "exercise": "Speed Recovery",
+            "description": "Recovery after maximum speed work",
+            "duration": "8 minutes",
+            "tips": "Allow nervous system to recover properly"
+          }
+        ]
+      },
+      {
+        "id": "player_speed_agility_3",
+        "title": "Power Play Agility",
+        "description": "Agility training for power play positioning and quick movements",
+        "difficulty": "beginner",
+        "estimatedDuration": "15-20 minutes",
+        "category": "Speed & Agility",
+        "focus": "speed and agility",
+        "equipment": "full gym access",
+        "warmup": [
+          {
+            "exercise": "Power Play Prep",
+            "description": "Preparation for power play agility work",
+            "duration": "3 minutes",
+            "rest": "None",
+            "tips": "Prepare for quick positioning changes"
+          }
+        ],
+        "mainWorkout": [
+          {
+            "exercise": "One-Timer Setup",
+            "description": "Quick positioning drills for one-timer opportunities",
+            "sets": "4",
+            "reps": "10 setups",
+            "rest": "60 seconds",
+            "tips": "Quick setup, be ready for the pass"
+          },
+          {
+            "exercise": "Screen Movement",
+            "description": "Agility work for screening and repositioning",
+            "sets": "3",
+            "reps": "30 seconds",
+            "rest": "45 seconds",
+            "tips": "Quick movements, maintain screen position"
+          },
+          {
+            "exercise": "Cycle Agility",
+            "description": "Agility drills simulating cycling in the offensive zone",
+            "sets": "3",
+            "reps": "45 seconds",
+            "rest": "60 seconds",
+            "tips": "Quick direction changes, maintain puck control"
+          }
+        ],
+        "cooldown": [
+          {
+            "exercise": "Power Play Recovery",
+            "description": "Recovery after power play agility training",
+            "duration": "4 minutes",
+            "tips": "Prepare for next power play opportunity"
+          }
+        ]
+      },
+      {
+        "id": "player_speed_agility_4",
+        "title": "Penalty Kill Defense",
+        "description": "Defensive agility training for penalty kill situations",
+        "difficulty": "intermediate",
+        "estimatedDuration": "30-45 minutes",
+        "category": "Speed & Agility",
+        "focus": "speed and agility",
+        "equipment": "minimal equipment",
+        "warmup": [
+          {
+            "exercise": "Defensive Stance Prep",
+            "description": "Preparation for defensive agility and positioning",
+            "duration": "4 minutes",
+            "rest": "None",
+            "tips": "Activate defensive movement patterns"
+          }
+        ],
+        "mainWorkout": [
+          {
+            "exercise": "Gap Control Shuffles",
+            "description": "Lateral shuffles for maintaining proper defensive gaps",
+            "sets": "5",
+            "reps": "30 seconds",
+            "rest": "45 seconds",
+            "tips": "Maintain gap, stay between man and goal"
+          },
+          {
+            "exercise": "Shot Lane Cuts",
+            "description": "Quick cuts to block shooting lanes",
+            "sets": "4",
+            "reps": "8 cuts",
+            "rest": "60 seconds",
+            "tips": "Quick reactions, block the shot lane"
+          },
+          {
+            "exercise": "Penalty Kill Sprints",
+            "description": "Short sprints simulating penalty kill pressure",
+            "sets": "4",
+            "reps": "15 seconds",
+            "rest": "75 seconds",
+            "tips": "High intensity, pressure the puck carrier"
+          }
+        ],
+        "cooldown": [
+          {
+            "exercise": "Defensive Recovery",
+            "description": "Recovery after intense defensive agility work",
+            "duration": "6 minutes",
+            "tips": "Recover defensive positioning muscles"
+          }
+        ]
+      },
+      {
+        "id": "player_speed_agility_5",
+        "title": "Overtime Lightning",
+        "description": "Maximum speed and agility for overtime game situations",
+        "difficulty": "advanced",
+        "estimatedDuration": "45-60 minutes",
+        "category": "Speed & Agility",
+        "focus": "speed and agility",
+        "equipment": "no equipment",
+        "warmup": [
+          {
+            "exercise": "Overtime Intensity Prep",
+            "description": "High-intensity preparation for overtime speed work",
+            "duration": "4 minutes",
+            "rest": "30 seconds",
+            "tips": "Prepare for championship moments"
+          }
+        ],
+        "mainWorkout": [
+          {
+            "exercise": "Sudden Death Sprints",
+            "description": "All-out sprints with overtime urgency",
+            "sets": "5",
+            "reps": "25 seconds",
+            "rest": "2 minutes",
+            "tips": "Give everything, imagine the championship on the line"
+          },
+          {
+            "exercise": "Game Winner Cuts",
+            "description": "Sharp cuts and direction changes for game-winning plays",
+            "sets": "4",
+            "reps": "10 cuts",
+            "rest": "90 seconds",
+            "tips": "Sharp cuts, create the game-winning opportunity"
+          },
+          {
+            "exercise": "Championship Agility",
+            "description": "Complex agility patterns for championship-level play",
+            "sets": "3",
+            "reps": "60 seconds",
+            "rest": "2 minutes",
+            "tips": "Championship agility, rise to the moment"
+          }
+        ],
+        "cooldown": [
+          {
+            "exercise": "Championship Recovery",
+            "description": "Recovery after giving everything in overtime",
+            "duration": "8 minutes",
+            "tips": "Recover like a champion, you gave your all"
+          }
+        ]
+      },
+      {
+        "id": "player_speed_agility_6",
+        "title": "Rookie Development Speed",
+        "description": "Fundamental speed and agility training for developing players",
+        "difficulty": "beginner",
+        "estimatedDuration": "15-20 minutes",
+        "category": "Speed & Agility",
+        "focus": "speed and agility",
+        "equipment": "full gym access",
+        "warmup": [
+          {
+            "exercise": "Development Prep",
+            "description": "Basic preparation for speed and agility development",
+            "duration": "3 minutes",
+            "rest": "None",
+            "tips": "Focus on proper technique and form"
+          }
+        ],
+        "mainWorkout": [
+          {
+            "exercise": "Basic Speed Drills",
+            "description": "Fundamental speed drills for skill development",
+            "sets": "3",
+            "reps": "20 seconds",
+            "rest": "60 seconds",
+            "tips": "Focus on form, build proper speed mechanics"
+          },
+          {
+            "exercise": "Simple Direction Changes",
+            "description": "Basic agility work for direction change skills",
+            "sets": "3",
+            "reps": "30 seconds",
+            "rest": "45 seconds",
+            "tips": "Controlled movements, master the basics"
+          },
+          {
+            "exercise": "Coordination Patterns",
+            "description": "Basic coordination drills for hockey movement patterns",
+            "sets": "3",
+            "reps": "45 seconds",
+            "rest": "60 seconds",
+            "tips": "Build coordination, practice makes perfect"
+          }
+        ],
+        "cooldown": [
+          {
+            "exercise": "Development Recovery",
+            "description": "Recovery and skill reflection for young players",
+            "duration": "4 minutes",
+            "tips": "Reflect on technique, focus on improvement"
+          }
+        ]
+      },
+      {
+        "id": "player_speed_agility_7",
+        "title": "Playoff Warrior Speed",
+        "description": "Intense speed and agility training for playoff hockey demands",
+        "difficulty": "intermediate",
+        "estimatedDuration": "30-45 minutes",
+        "category": "Speed & Agility",
+        "focus": "speed and agility",
+        "equipment": "minimal equipment",
+        "warmup": [
+          {
+            "exercise": "Playoff Battle Prep",
+            "description": "Preparation for playoff-intensity speed work",
+            "duration": "4 minutes",
+            "rest": "30 seconds",
+            "tips": "Prepare for playoff battles and intensity"
+          }
+        ],
+        "mainWorkout": [
+          {
+            "exercise": "Playoff Sprint Battles",
+            "description": "High-intensity sprints simulating playoff battles",
+            "sets": "5",
+            "reps": "20 seconds",
+            "rest": "90 seconds",
+            "tips": "Playoff intensity, battle for every inch"
+          },
+          {
+            "exercise": "Battle Zone Agility",
+            "description": "Agility work for battles in tight spaces",
+            "sets": "4",
+            "reps": "45 seconds",
+            "rest": "75 seconds",
+            "tips": "Quick movements in traffic, win the battles"
+          },
+          {
+            "exercise": "Stanley Cup Speed",
+            "description": "Speed work worthy of Stanley Cup pursuit",
+            "sets": "3",
+            "reps": "30 seconds",
+            "rest": "90 seconds",
+            "tips": "Championship speed, pursue the Cup"
+          }
+        ],
+        "cooldown": [
+          {
+            "exercise": "Playoff Recovery",
+            "description": "Recovery between playoff training sessions",
+            "duration": "6 minutes",
+            "tips": "Recover smart, prepare for the next battle"
+          }
+        ]
+      },
+      {
+        "id": "player_speed_agility_8",
+        "title": "Captain's Leadership Speed",
+        "description": "Elite speed and agility training demonstrating team leadership",
+        "difficulty": "advanced",
+        "estimatedDuration": "45-60 minutes",
+        "category": "Speed & Agility",
+        "focus": "speed and agility",
+        "equipment": "no equipment",
+        "warmup": [
+          {
+            "exercise": "Leadership Prep",
+            "description": "Preparation for captain-level speed and agility work",
+            "duration": "5 minutes",
+            "rest": "None",
+            "tips": "Prepare to lead by example in every drill"
+          }
+        ],
+        "mainWorkout": [
+          {
+            "exercise": "Captain's Sprint Leadership",
+            "description": "Sprint intervals demonstrating captain-level commitment",
+            "sets": "6",
+            "reps": "25 seconds",
+            "rest": "90 seconds",
+            "tips": "Lead by example, set the standard"
+          },
+          {
+            "exercise": "Leadership Agility",
+            "description": "Complex agility patterns showing elite skill",
+            "sets": "4",
+            "reps": "60 seconds",
+            "rest": "2 minutes",
+            "tips": "Demonstrate elite agility, inspire the team"
+          },
+          {
+            "exercise": "Championship Movement",
+            "description": "Movement patterns worthy of championship leadership",
+            "sets": "3",
+            "reps": "45 seconds",
+            "rest": "90 seconds",
+            "tips": "Championship movement, lead the way"
+          }
+        ],
+        "cooldown": [
+          {
+            "exercise": "Leadership Recovery",
+            "description": "Recovery routine fitting for team leadership",
+            "duration": "8 minutes",
+            "tips": "Recover like a leader, maintain high standards"
+          }
+        ]
+      },
+      {
+        "id": "player_speed_agility_9",
+        "title": "Shift Change Explosiveness",
+        "description": "Speed training focused on explosive shift changes and line chemistry",
+        "difficulty": "beginner",
+        "estimatedDuration": "15-20 minutes",
+        "category": "Speed & Agility",
+        "focus": "speed and agility",
+        "equipment": "full gym access",
+        "warmup": [
+          {
+            "exercise": "Shift Change Prep",
+            "description": "Preparation for explosive shift change training",
+            "duration": "2 minutes",
+            "rest": "None",
+            "tips": "Prepare for maximum explosiveness"
+          }
+        ],
+        "mainWorkout": [
+          {
+            "exercise": "Line Change Sprints",
+            "description": "Explosive sprints simulating fresh line changes",
+            "sets": "5",
+            "reps": "15 seconds",
+            "rest": "60 seconds",
+            "tips": "Fresh legs, explosive start to the shift"
+          },
+          {
+            "exercise": "Backchecking Speed",
+            "description": "Speed work for effective backchecking and defensive pressure",
+            "sets": "4",
+            "reps": "20 seconds",
+            "rest": "75 seconds",
+            "tips": "Quick backcheck, pressure the puck carrier"
+          },
+          {
+            "exercise": "Forechecking Pursuit",
+            "description": "Agility and speed for effective forechecking pressure",
+            "sets": "3",
+            "reps": "30 seconds",
+            "rest": "60 seconds",
+            "tips": "Relentless forecheck, pursue the puck"
+          }
+        ],
+        "cooldown": [
+          {
+            "exercise": "Shift Recovery",
+            "description": "Recovery simulating between-shift rest periods",
+            "duration": "3 minutes",
+            "tips": "Quick recovery, be ready for the next shift"
+          }
+        ]
+      },
+      {
+        "id": "player_speed_agility_10",
+        "title": "Hall of Fame Finesse",
+        "description": "Legendary speed and agility training worthy of Hall of Fame recognition",
+        "difficulty": "intermediate",
+        "estimatedDuration": "30-45 minutes",
+        "category": "Speed & Agility",
+        "focus": "speed and agility",
+        "equipment": "minimal equipment",
+        "warmup": [
+          {
+            "exercise": "Hall of Fame Preparation",
+            "description": "Preparation for legendary speed and agility work",
+            "duration": "5 minutes",
+            "rest": "30 seconds",
+            "tips": "Prepare with the dedication of legends"
+          }
+        ],
+        "mainWorkout": [
+          {
+            "exercise": "Legendary Speed Patterns",
+            "description": "Speed patterns worthy of hockey legends",
+            "sets": "5",
+            "reps": "30 seconds",
+            "rest": "90 seconds",
+            "tips": "Legendary speed, smooth and effortless"
+          },
+          {
+            "exercise": "Hall of Fame Agility",
+            "description": "Agility work demonstrating Hall of Fame skill level",
+            "sets": "4",
+            "reps": "45 seconds",
+            "rest": "90 seconds",
+            "tips": "Hall of Fame agility, make it look easy"
+          },
+          {
+            "exercise": "Legacy Movement",
+            "description": "Movement patterns that build a lasting legacy",
+            "sets": "3",
+            "reps": "60 seconds",
+            "rest": "2 minutes",
+            "tips": "Build a legacy of excellence in every movement"
+          }
+        ],
+        "cooldown": [
+          {
+            "exercise": "Hall of Fame Recovery",
+            "description": "Recovery routine honoring the work of legends",
+            "duration": "7 minutes",
+            "tips": "Recover with the wisdom of Hall of Famers"
+          }
+        ]
+      }
+    ]
+  },
+  "groupMember": {
+    "hockey_fitness": [
+      {
+        "id": "groupmember_hockey_fitness_1",
+        "title": "Hat Trick Cardio Challenge",
+        "description": "Hockey-inspired cardio workout that gets your heart pumping like game time",
+        "difficulty": "intermediate",
+        "estimatedDuration": "30-45 minutes",
+        "category": "Hockey Fitness", 
+        "focus": "cardio endurance",
+        "equipment": "no equipment",
+        "warmup": [
+          {
+            "exercise": "Warm-up Skate",
+            "description": "Easy marching in place transitioning to side steps like skating",
+            "duration": "3 minutes",
+            "rest": "None",
+            "tips": "Gradually increase intensity, get the blood flowing"
+          },
+          {
+            "exercise": "Puck Handling Arms",
+            "description": "Arm circles and movements like you're handling a hockey puck",
+            "duration": "2 minutes", 
+            "rest": "None",
+            "tips": "Loosen up shoulders and arms"
+          }
+        ],
+        "mainWorkout": [
+          {
+            "exercise": "Power Play Jumping Jacks",
+            "description": "Classic jumping jacks but imagine you're celebrating a power play goal",
+            "sets": "4",
+            "reps": "30 seconds",
+            "rest": "30 seconds",
+            "tips": "Keep energy high, smile like you scored!"
+          },
+          {
+            "exercise": "Slapshot Squats",
+            "description": "Squats with arm motion like taking a powerful slapshot",
+            "sets": "3",
+            "reps": "15",
+            "rest": "45 seconds",
+            "tips": "Deep squats, explosive up motion with arms"
+          },
+          {
+            "exercise": "Breakaway Sprints",
+            "description": "High knees running in place like you're on a breakaway",
+            "sets": "5",
+            "reps": "20 seconds",
+            "rest": "40 seconds",
+            "tips": "Imagine you're racing to score the winning goal"
+          },
+          {
+            "exercise": "Goalie Save Reaches",
+            "description": "Side reaches and stretches like a goalie making spectacular saves",
+            "sets": "3",
+            "reps": "10 each side",
+            "rest": "30 seconds",
+            "tips": "Full extension, really stretch to make the save"
+          }
+        ],
+        "cooldown": [
+          {
+            "exercise": "Victory Lap Walk",
+            "description": "Slow walking while celebrating your great workout",
+            "duration": "3 minutes",
+            "tips": "Deep breathing, you earned this victory!"
+          },
+          {
+            "exercise": "Post-Game Stretch",
+            "description": "Gentle stretching like players do after the game",
+            "duration": "5 minutes",
+            "tips": "Focus on legs and back"
+          }
+        ]
+      },
+      {
+        "id": "groupmember_hockey_fitness_2",
+        "title": "Stanley Cup Stamina Builder", 
+        "description": "Endurance workout inspired by the intensity of Stanley Cup playoffs",
+        "difficulty": "beginner",
+        "estimatedDuration": "15-20 minutes",
+        "category": "Hockey Fitness",
+        "focus": "cardio endurance", 
+        "equipment": "no equipment",
+        "warmup": [
+          {
+            "exercise": "Pre-Game Warm-up",
+            "description": "Light movement to get ready for the big game",
+            "duration": "2 minutes",
+            "rest": "None",
+            "tips": "Get your body ready for action"
+          }
+        ],
+        "mainWorkout": [
+          {
+            "exercise": "Penalty Kill Cardio",
+            "description": "Quick steps and movements like defending during a penalty kill",
+            "sets": "3",
+            "reps": "45 seconds",
+            "rest": "45 seconds",
+            "tips": "Stay moving, defend that goal!"
+          },
+          {
+            "exercise": "Championship Mountain Climbers",
+            "description": "Mountain climbers that build the stamina of champions",
+            "sets": "3", 
+            "reps": "30 seconds",
+            "rest": "60 seconds",
+            "tips": "Keep core tight, champions never quit"
+          }
+        ],
+        "cooldown": [
+          {
+            "exercise": "Champion Cool Down",
+            "description": "Gentle stretching like you just won the Stanley Cup",
+            "duration": "4 minutes",
+            "tips": "Celebrate your effort, you're a champion"
+          }
+        ]
+      },
+      {
+        "id": "groupmember_hockey_fitness_3",
+        "title": "Power Play Cardio Blast",
+        "description": "High-energy cardio workout inspired by the excitement of power play goals",
+        "difficulty": "advanced",
+        "estimatedDuration": "45-60 minutes",
+        "category": "Hockey Fitness",
+        "focus": "cardio endurance",
+        "equipment": "no equipment",
+        "warmup": [
+          {
+            "exercise": "Power Play Warm-up",
+            "description": "Get your energy up like the team just got a power play",
+            "duration": "4 minutes",
+            "rest": "None",
+            "tips": "Build excitement, power play opportunity ahead!"
+          }
+        ],
+        "mainWorkout": [
+          {
+            "exercise": "Goal Celebration Jumps",
+            "description": "Jumping exercises like celebrating a power play goal",
+            "sets": "5",
+            "reps": "30 seconds",
+            "rest": "30 seconds",
+            "tips": "Jump like you just scored the game winner!"
+          },
+          {
+            "exercise": "Assist Dance Cardio",
+            "description": "Fun cardio movements like celebrating an amazing assist",
+            "sets": "4",
+            "reps": "45 seconds",
+            "rest": "45 seconds",
+            "tips": "Move with joy, you just made the perfect pass!"
+          },
+          {
+            "exercise": "Championship Sprints",
+            "description": "High-intensity running like racing for the championship",
+            "sets": "6",
+            "reps": "20 seconds",
+            "rest": "40 seconds",
+            "tips": "Sprint toward your championship moment!"
+          }
+        ],
+        "cooldown": [
+          {
+            "exercise": "Victory Celebration",
+            "description": "Cool down while celebrating your amazing effort",
+            "duration": "6 minutes",
+            "tips": "You dominated that workout, celebrate like champions!"
+          }
+        ]
+      },
+      {
+        "id": "groupmember_hockey_fitness_4",
+        "title": "Rookie Training Camp",
+        "description": "Fun and accessible hockey-themed fitness for beginners",
+        "difficulty": "beginner",
+        "estimatedDuration": "15-20 minutes",
+        "category": "Hockey Fitness",
+        "focus": "cardio endurance",
+        "equipment": "full gym access",
+        "warmup": [
+          {
+            "exercise": "Training Camp Check-in",
+            "description": "Easy warm-up like arriving at your first training camp",
+            "duration": "2 minutes",
+            "rest": "None",
+            "tips": "Welcome to hockey fitness, you belong here!"
+          }
+        ],
+        "mainWorkout": [
+          {
+            "exercise": "Rookie Skate Steps",
+            "description": "Basic stepping movements like learning to skate",
+            "sets": "3",
+            "reps": "45 seconds",
+            "rest": "60 seconds",
+            "tips": "Everyone starts somewhere, you're doing great!"
+          },
+          {
+            "exercise": "First Goal Celebration",
+            "description": "Easy celebratory movements for building confidence",
+            "sets": "3",
+            "reps": "30 seconds",
+            "rest": "45 seconds",
+            "tips": "Celebrate every small victory!"
+          },
+          {
+            "exercise": "Team Spirit March",
+            "description": "Marching movements building team spirit and cardio",
+            "sets": "3",
+            "reps": "60 seconds",
+            "rest": "45 seconds",
+            "tips": "You're part of the team now!"
+          }
+        ],
+        "cooldown": [
+          {
+            "exercise": "Rookie Achievement",
+            "description": "Gentle stretching while celebrating your progress",
+            "duration": "3 minutes",
+            "tips": "Every pro was once a rookie, you're on your way!"
+          }
+        ]
+      },
+      {
+        "id": "groupmember_hockey_fitness_5",
+        "title": "Playoff Intensity Challenge",
+        "description": "Intense cardio workout capturing the excitement of playoff hockey",
+        "difficulty": "intermediate",
+        "estimatedDuration": "30-45 minutes",
+        "category": "Hockey Fitness",
+        "focus": "cardio endurance",
+        "equipment": "minimal equipment",
+        "warmup": [
+          {
+            "exercise": "Playoff Atmosphere",
+            "description": "Build intensity like entering a playoff arena",
+            "duration": "4 minutes",
+            "rest": "None",
+            "tips": "Feel the playoff energy, this is your moment!"
+          }
+        ],
+        "mainWorkout": [
+          {
+            "exercise": "Overtime Cardio Push",
+            "description": "High-intensity cardio like playing in overtime",
+            "sets": "4",
+            "reps": "60 seconds",
+            "rest": "60 seconds",
+            "tips": "Overtime intensity, everything on the line!"
+          },
+          {
+            "exercise": "Series Clincher Burpees",
+            "description": "Burpees with the intensity of clinching a playoff series",
+            "sets": "3",
+            "reps": "8-10",
+            "rest": "90 seconds",
+            "tips": "This could be the series clincher!"
+          },
+          {
+            "exercise": "Cup Run Cardio",
+            "description": "Sustained cardio effort for the championship run",
+            "sets": "4",
+            "reps": "45 seconds",
+            "rest": "45 seconds",
+            "tips": "Every step brings you closer to the Cup!"
+          }
+        ],
+        "cooldown": [
+          {
+            "exercise": "Playoff Recovery",
+            "description": "Recovery like preparing for the next playoff game",
+            "duration": "7 minutes",
+            "tips": "Recover smart, the series isn't over yet!"
+          }
+        ]
+      },
+      {
+        "id": "groupmember_hockey_fitness_6",
+        "title": "All-Star Weekend Fun",
+        "description": "Playful hockey-themed cardio workout with All-Star energy",
+        "difficulty": "beginner",
+        "estimatedDuration": "15-20 minutes",
+        "category": "Hockey Fitness",
+        "focus": "cardio endurance",
+        "equipment": "full gym access",
+        "warmup": [
+          {
+            "exercise": "All-Star Entrance",
+            "description": "Fun warm-up like being introduced at the All-Star game",
+            "duration": "3 minutes",
+            "rest": "None",
+            "tips": "You're the star of this workout!"
+          }
+        ],
+        "mainWorkout": [
+          {
+            "exercise": "Skills Competition Cardio",
+            "description": "Fun cardio movements like participating in skills competitions",
+            "sets": "4",
+            "reps": "30 seconds",
+            "rest": "30 seconds",
+            "tips": "Show off your skills, have fun with it!"
+          },
+          {
+            "exercise": "Fan Favorite Moves",
+            "description": "Crowd-pleasing movements that get your heart pumping",
+            "sets": "3",
+            "reps": "45 seconds",
+            "rest": "45 seconds",
+            "tips": "The crowd loves you, keep entertaining!"
+          },
+          {
+            "exercise": "All-Star Finale",
+            "description": "Grand finale cardio movements for the All-Star show",
+            "sets": "3",
+            "reps": "40 seconds",
+            "rest": "50 seconds",
+            "tips": "Finish strong, you're the All-Star!"
+          }
+        ],
+        "cooldown": [
+          {
+            "exercise": "All-Star Appreciation",
+            "description": "Cool down while appreciating your All-Star effort",
+            "duration": "4 minutes",
+            "tips": "You performed like an All-Star today!"
+          }
+        ]
+      },
+      {
+        "id": "groupmember_hockey_fitness_7",
+        "title": "Championship Game Energy",
+        "description": "Maximum energy cardio workout inspired by championship game excitement",
+        "difficulty": "intermediate",
+        "estimatedDuration": "30-45 minutes",
+        "category": "Hockey Fitness",
+        "focus": "cardio endurance",
+        "equipment": "minimal equipment",
+        "warmup": [
+          {
+            "exercise": "Championship Entrance",
+            "description": "Build up energy like entering the championship game",
+            "duration": "4 minutes",
+            "rest": "30 seconds",
+            "tips": "This is it, the championship moment!"
+          }
+        ],
+        "mainWorkout": [
+          {
+            "exercise": "Title Game Cardio",
+            "description": "High-energy cardio worthy of a championship game",
+            "sets": "5",
+            "reps": "45 seconds",
+            "rest": "45 seconds",
+            "tips": "Championship effort, leave it all out there!"
+          },
+          {
+            "exercise": "Trophy Lift Celebrations",
+            "description": "Celebratory movements like lifting the championship trophy",
+            "sets": "4",
+            "reps": "30 seconds",
+            "rest": "60 seconds",
+            "tips": "Lift that trophy, you earned it!"
+          },
+          {
+            "exercise": "Victory Lap Cardio",
+            "description": "Sustained cardio like taking a victory lap with the championship",
+            "sets": "3",
+            "reps": "60 seconds",
+            "rest": "60 seconds",
+            "tips": "Victory lap around the rink, soak in the moment!"
+          }
+        ],
+        "cooldown": [
+          {
+            "exercise": "Championship Celebration",
+            "description": "Celebration cool-down worthy of champions",
+            "duration": "6 minutes",
+            "tips": "You're a champion, celebrate this achievement!"
+          }
+        ]
+      },
+      {
+        "id": "groupmember_hockey_fitness_8",
+        "title": "Winter Classic Outdoor Energy",
+        "description": "Fresh and energizing cardio workout inspired by outdoor Winter Classic games",
+        "difficulty": "advanced",
+        "estimatedDuration": "45-60 minutes",
+        "category": "Hockey Fitness",
+        "focus": "cardio endurance",
+        "equipment": "no equipment",
+        "warmup": [
+          {
+            "exercise": "Outdoor Rink Prep",
+            "description": "Energizing warm-up like preparing for outdoor hockey",
+            "duration": "5 minutes",
+            "rest": "None",
+            "tips": "Fresh air energy, feel the outdoor excitement!"
+          }
+        ],
+        "mainWorkout": [
+          {
+            "exercise": "Cold Weather Cardio",
+            "description": "Invigorating cardio that builds internal heat",
+            "sets": "6",
+            "reps": "40 seconds",
+            "rest": "50 seconds",
+            "tips": "Generate heat, feel alive in the cold!"
+          },
+          {
+            "exercise": "Outdoor Game Intensity",
+            "description": "High-intensity movements capturing outdoor game excitement",
+            "sets": "5",
+            "reps": "30 seconds",
+            "rest": "60 seconds",
+            "tips": "Special outdoor game energy, make it memorable!"
+          },
+          {
+            "exercise": "Winter Classic Finish",
+            "description": "Strong finishing cardio for the Winter Classic experience",
+            "sets": "4",
+            "reps": "45 seconds",
+            "rest": "75 seconds",
+            "tips": "Finish strong in the winter air!"
+          }
+        ],
+        "cooldown": [
+          {
+            "exercise": "Outdoor Recovery",
+            "description": "Peaceful recovery like enjoying the outdoor winter scenery",
+            "duration": "8 minutes",
+            "tips": "Breathe the fresh air, appreciate the outdoor experience"
+          }
+        ]
+      },
+      {
+        "id": "groupmember_hockey_fitness_9",
+        "title": "Heritage Classic Tribute",
+        "description": "Classic hockey-inspired cardio honoring the heritage of the game",
+        "difficulty": "beginner",
+        "estimatedDuration": "15-20 minutes",
+        "category": "Hockey Fitness",
+        "focus": "cardio endurance",
+        "equipment": "full gym access",
+        "warmup": [
+          {
+            "exercise": "Hockey Heritage Warm-up",
+            "description": "Respectful warm-up honoring hockey's great heritage",
+            "duration": "3 minutes",
+            "rest": "None",
+            "tips": "Honor the game's history with your effort"
+          }
+        ],
+        "mainWorkout": [
+          {
+            "exercise": "Classic Era Cardio",
+            "description": "Timeless cardio movements honoring hockey's classic era",
+            "sets": "3",
+            "reps": "50 seconds",
+            "rest": "70 seconds",
+            "tips": "Classic style, timeless effort"
+          },
+          {
+            "exercise": "Original Six Spirit",
+            "description": "Cardio with the spirit of the Original Six teams",
+            "sets": "4",
+            "reps": "40 seconds",
+            "rest": "60 seconds",
+            "tips": "Channel the spirit of hockey's founding teams"
+          },
+          {
+            "exercise": "Heritage Celebration",
+            "description": "Celebratory movements honoring hockey's rich heritage",
+            "sets": "3",
+            "reps": "35 seconds",
+            "rest": "55 seconds",
+            "tips": "Celebrate the beautiful heritage of hockey"
+          }
+        ],
+        "cooldown": [
+          {
+            "exercise": "Heritage Reflection",
+            "description": "Peaceful cool-down reflecting on hockey's great heritage",
+            "duration": "5 minutes",
+            "tips": "Reflect on your place in hockey's continuing story"
+          }
+        ]
+      },
+      {
+        "id": "groupmember_hockey_fitness_10",
+        "title": "Hall of Fame Inspiration",
+        "description": "Inspirational cardio workout honoring Hall of Fame legends",
+        "difficulty": "intermediate",
+        "estimatedDuration": "30-45 minutes",
+        "category": "Hockey Fitness",
+        "focus": "cardio endurance",
+        "equipment": "minimal equipment",
+        "warmup": [
+          {
+            "exercise": "Hall of Fame Preparation",
+            "description": "Inspirational warm-up channeling Hall of Fame greatness",
+            "duration": "4 minutes",
+            "rest": "30 seconds",
+            "tips": "Be inspired by the legends who came before"
+          }
+        ],
+        "mainWorkout": [
+          {
+            "exercise": "Legendary Cardio Effort",
+            "description": "Cardio effort worthy of Hall of Fame recognition",
+            "sets": "5",
+            "reps": "50 seconds",
+            "rest": "70 seconds",
+            "tips": "Legendary effort, honor the Hall of Famers"
+          },
+          {
+            "exercise": "Greatness Intervals",
+            "description": "Interval training inspired by moments of hockey greatness",
+            "sets": "4",
+            "reps": "45 seconds",
+            "rest": "75 seconds",
+            "tips": "Channel greatness, be inspired by legends"
+          },
+          {
+            "exercise": "Legacy Building",
+            "description": "Sustained cardio effort that builds your own legacy",
+            "sets": "3",
+            "reps": "60 seconds",
+            "rest": "90 seconds",
+            "tips": "Build your own legacy of fitness excellence"
+          }
+        ],
+        "cooldown": [
+          {
+            "exercise": "Hall of Fame Reflection",
+            "description": "Reflective cool-down honoring your Hall of Fame effort",
+            "duration": "7 minutes",
+            "tips": "You trained like a Hall of Famer today"
+          }
+        ]
+      }
+    ],
+    "hockey_strength": [
+      {
+        "id": "groupmember_hockey_strength_1",
+        "title": "Power Forward Strength Training",
+        "description": "Build strength like a hockey power forward with these hockey-themed exercises",
+        "difficulty": "intermediate",
+        "estimatedDuration": "30-45 minutes",
+        "category": "Hockey Strength",
+        "focus": "strength training",
+        "equipment": "minimal equipment",
+        "warmup": [
+          {
+            "exercise": "Equipment Check Warm-up",
+            "description": "Light movements like a player checking their gear before the game",
+            "duration": "3 minutes",
+            "rest": "None",
+            "tips": "Get all your muscles ready for action"
+          }
+        ],
+        "mainWorkout": [
+          {
+            "exercise": "Power Forward Push-ups",
+            "description": "Strong push-ups like the power needed to muscle through traffic",
+            "sets": "3",
+            "reps": "8-12",
+            "rest": "60 seconds",
+            "tips": "Strong and controlled, build that power forward strength"
+          },
+          {
+            "exercise": "Defenseman Wall Sits",
+            "description": "Wall sits that build the strength to defend the blue line",
+            "sets": "3",
+            "reps": "30-45 seconds",
+            "rest": "60 seconds", 
+            "tips": "Hold that line! Strong legs win games"
+          },
+          {
+            "exercise": "Captain's Planks",
+            "description": "Core strengthening planks worthy of wearing the C",
+            "sets": "3",
+            "reps": "30 seconds",
+            "rest": "45 seconds",
+            "tips": "Lead by example, captains are strong in the core"
+          }
+        ],
+        "cooldown": [
+          {
+            "exercise": "Team Huddle Stretch",
+            "description": "Stretching routine like the team coming together after practice",
+            "duration": "5 minutes",
+            "tips": "Good teamwork includes taking care of your body"
+          }
+        ]
+      },
+      {
+        "id": "groupmember_hockey_strength_2",
+        "title": "Rookie Strength Development",
+        "description": "Build foundational strength with encouraging hockey-themed exercises",
+        "difficulty": "advanced",
+        "estimatedDuration": "45-60 minutes",
+        "category": "Hockey Strength",
+        "focus": "strength training",
+        "equipment": "no equipment",
+        "warmup": [
+          {
+            "exercise": "Training Camp Prep",
+            "description": "Gentle preparation like getting ready for your first training camp",
+            "duration": "4 minutes",
+            "rest": "None",
+            "tips": "Everyone starts somewhere, you're building something great!"
+          }
+        ],
+        "mainWorkout": [
+          {
+            "exercise": "Rookie Push-ups",
+            "description": "Progressive push-ups building strength like a developing player",
+            "sets": "3",
+            "reps": "5-8",
+            "rest": "90 seconds",
+            "tips": "Every rep makes you stronger, rookies improve every day"
+          },
+          {
+            "exercise": "Learning Squats",
+            "description": "Squats with focus on form like learning proper hockey technique",
+            "sets": "3",
+            "reps": "8-12",
+            "rest": "75 seconds",
+            "tips": "Perfect your form, champions master the basics"
+          },
+          {
+            "exercise": "Future Star Planks",
+            "description": "Core strengthening for your future hockey star potential",
+            "sets": "3",
+            "reps": "20-30 seconds",
+            "rest": "60 seconds",
+            "tips": "Build your core foundation, future stars start here"
+          }
+        ],
+        "cooldown": [
+          {
+            "exercise": "Development Celebration",
+            "description": "Celebrate your development progress with gentle stretching",
+            "duration": "6 minutes",
+            "tips": "Every workout makes you stronger, celebrate your progress!"
+          }
+        ]
+      },
+      {
+        "id": "groupmember_hockey_strength_3",
+        "title": "Captain's Leadership Strength",
+        "description": "Build captain-level strength and inspire others with your dedication",
+        "difficulty": "beginner",
+        "estimatedDuration": "15-20 minutes",
+        "category": "Hockey Strength",
+        "focus": "strength training",
+        "equipment": "full gym access",
+        "warmup": [
+          {
+            "exercise": "Leadership Preparation",
+            "description": "Prepare with the focus and dedication of team leadership",
+            "duration": "3 minutes",
+            "rest": "None",
+            "tips": "Lead by example, captains inspire through their effort"
+          }
+        ],
+        "mainWorkout": [
+          {
+            "exercise": "Captain's Command Push-ups",
+            "description": "Strong push-ups that command respect like wearing the C",
+            "sets": "4",
+            "reps": "10-15",
+            "rest": "60 seconds",
+            "tips": "Strong and decisive, lead from the front"
+          },
+          {
+            "exercise": "Leadership Squats",
+            "description": "Squats with the presence and power of team leadership",
+            "sets": "4",
+            "reps": "12-15",
+            "rest": "60 seconds",
+            "tips": "Strong foundation, captains set the standard"
+          },
+          {
+            "exercise": "Inspiring Core Work",
+            "description": "Core strength that inspires teammates to work harder",
+            "sets": "3",
+            "reps": "40 seconds",
+            "rest": "50 seconds",
+            "tips": "Your strength inspires others to be better"
+          }
+        ],
+        "cooldown": [
+          {
+            "exercise": "Leadership Recovery",
+            "description": "Recovery with the wisdom and composure of great captains",
+            "duration": "4 minutes",
+            "tips": "Great leaders take care of themselves to help others"
+          }
+        ]
+      },
+      {
+        "id": "groupmember_hockey_strength_4",
+        "title": "Playoff Warrior Strength",
+        "description": "Build the mental and physical strength needed for playoff battles",
+        "difficulty": "intermediate",
+        "estimatedDuration": "30-45 minutes",
+        "category": "Hockey Strength",
+        "focus": "strength training",
+        "equipment": "minimal equipment",
+        "warmup": [
+          {
+            "exercise": "Playoff Intensity Prep",
+            "description": "Mental and physical preparation for playoff-level training",
+            "duration": "4 minutes",
+            "rest": "30 seconds",
+            "tips": "Playoff mindset, every rep matters in the playoffs"
+          }
+        ],
+        "mainWorkout": [
+          {
+            "exercise": "Battle Strength Push-ups",
+            "description": "Push-ups with the determination of playoff battles",
+            "sets": "4",
+            "reps": "8-12",
+            "rest": "75 seconds",
+            "tips": "Battle through fatigue, playoffs test your character"
+          },
+          {
+            "exercise": "Warrior Squats",
+            "description": "Squats building the strength of playoff warriors",
+            "sets": "4",
+            "reps": "12-15",
+            "rest": "70 seconds",
+            "tips": "Warrior strength, battle through the burn"
+          },
+          {
+            "exercise": "Championship Core",
+            "description": "Core work that builds championship-level mental toughness",
+            "sets": "3",
+            "reps": "45 seconds",
+            "rest": "60 seconds",
+            "tips": "Championship core, winners never quit"
+          }
+        ],
+        "cooldown": [
+          {
+            "exercise": "Warrior Recovery",
+            "description": "Recovery between battles, preparing for the next playoff game",
+            "duration": "7 minutes",
+            "tips": "Warriors recover smart, the battle continues tomorrow"
+          }
+        ]
+      },
+      {
+        "id": "groupmember_hockey_strength_5",
+        "title": "All-Star Weekend Power",
+        "description": "Fun and powerful strength training with All-Star celebration energy",
+        "difficulty": "advanced",
+        "estimatedDuration": "45-60 minutes",
+        "category": "Hockey Strength",
+        "focus": "strength training",
+        "equipment": "no equipment",
+        "warmup": [
+          {
+            "exercise": "All-Star Entrance",
+            "description": "Energetic warm-up like being introduced at the All-Star game",
+            "duration": "4 minutes",
+            "rest": "None",
+            "tips": "You're the All-Star of this workout, shine bright!"
+          }
+        ],
+        "mainWorkout": [
+          {
+            "exercise": "Skills Competition Push-ups",
+            "description": "Show-stopping push-ups like competing in All-Star skills",
+            "sets": "4",
+            "reps": "10-12",
+            "rest": "70 seconds",
+            "tips": "Show your skills, entertain the crowd!"
+          },
+          {
+            "exercise": "All-Star Power Squats",
+            "description": "Powerful squats worthy of All-Star recognition",
+            "sets": "4",
+            "reps": "12-15",
+            "rest": "75 seconds",
+            "tips": "All-Star power, you belong with the best"
+          },
+          {
+            "exercise": "Fan Favorite Core",
+            "description": "Core work that makes you a fan favorite",
+            "sets": "3",
+            "reps": "50 seconds",
+            "rest": "70 seconds",
+            "tips": "The fans love your effort, keep entertaining!"
+          }
+        ],
+        "cooldown": [
+          {
+            "exercise": "All-Star Appreciation",
+            "description": "Appreciate your All-Star effort with celebratory recovery",
+            "duration": "8 minutes",
+            "tips": "You were the All-Star today, appreciate your performance!"
+          }
+        ]
+      },
+      {
+        "id": "groupmember_hockey_strength_6",
+        "title": "Stanley Cup Dream Builder",
+        "description": "Build the strength needed to chase your Stanley Cup dreams",
+        "difficulty": "beginner",
+        "estimatedDuration": "15-20 minutes",
+        "category": "Hockey Strength",
+        "focus": "strength training",
+        "equipment": "full gym access",
+        "warmup": [
+          {
+            "exercise": "Dream Preparation",
+            "description": "Prepare with the hope and determination of Cup dreams",
+            "duration": "3 minutes",
+            "rest": "None",
+            "tips": "Every champion started with a dream"
+          }
+        ],
+        "mainWorkout": [
+          {
+            "exercise": "Cup Dream Push-ups",
+            "description": "Push-ups powered by Stanley Cup dreams and determination",
+            "sets": "3",
+            "reps": "6-10",
+            "rest": "60 seconds",
+            "tips": "Dreams fuel your strength, visualize holding the Cup"
+          },
+          {
+            "exercise": "Championship Squats",
+            "description": "Squats building the foundation for championship dreams",
+            "sets": "3",
+            "reps": "10-12",
+            "rest": "60 seconds",
+            "tips": "Strong foundation, championships are built day by day"
+          },
+          {
+            "exercise": "Dream Core Work",
+            "description": "Core strengthening for making dreams reality",
+            "sets": "3",
+            "reps": "30 seconds",
+            "rest": "45 seconds",
+            "tips": "Strong core, strong dreams, make them reality"
+          }
+        ],
+        "cooldown": [
+          {
+            "exercise": "Dream Reflection",
+            "description": "Reflect on your dreams while recovering from great work",
+            "duration": "4 minutes",
+            "tips": "Your dreams are valid, keep building toward them"
+          }
+        ]
+      },
+      {
+        "id": "groupmember_hockey_strength_7",
+        "title": "Overtime Hero Training",
+        "description": "Build the strength to be the hero in overtime moments",
+        "difficulty": "intermediate",
+        "estimatedDuration": "30-45 minutes",
+        "category": "Hockey Strength",
+        "focus": "strength training",
+        "equipment": "minimal equipment",
+        "warmup": [
+          {
+            "exercise": "Hero Moment Prep",
+            "description": "Prepare for your hero moment with focused intensity",
+            "duration": "4 minutes",
+            "rest": "30 seconds",
+            "tips": "Heroes are made in moments like this"
+          }
+        ],
+        "mainWorkout": [
+          {
+            "exercise": "Game Winner Push-ups",
+            "description": "Push-ups with the power to score game-winning goals",
+            "sets": "4",
+            "reps": "8-12",
+            "rest": "75 seconds",
+            "tips": "Game-winning strength, be ready for your moment"
+          },
+          {
+            "exercise": "Clutch Squats",
+            "description": "Squats that build clutch performance under pressure",
+            "sets": "4",
+            "reps": "10-15",
+            "rest": "70 seconds",
+            "tips": "Clutch performance, rise to the big moments"
+          },
+          {
+            "exercise": "Hero Core",
+            "description": "Core work that builds the strength of heroes",
+            "sets": "3",
+            "reps": "45 seconds",
+            "rest": "60 seconds",
+            "tips": "Heroes have strong cores, be ready for anything"
+          }
+        ],
+        "cooldown": [
+          {
+            "exercise": "Hero Recovery",
+            "description": "Recover like a hero preparing for the next big moment",
+            "duration": "6 minutes",
+            "tips": "Heroes prepare well, your moment is coming"
+          }
+        ]
+      },
+      {
+        "id": "groupmember_hockey_strength_8",
+        "title": "Winter Classic Strength",
+        "description": "Build strength with the fresh energy of outdoor Winter Classic games",
+        "difficulty": "advanced",
+        "estimatedDuration": "45-60 minutes",
+        "category": "Hockey Strength",
+        "focus": "strength training",
+        "equipment": "no equipment",
+        "warmup": [
+          {
+            "exercise": "Outdoor Game Preparation",
+            "description": "Energizing preparation for outdoor strength training",
+            "duration": "5 minutes",
+            "rest": "None",
+            "tips": "Fresh outdoor energy, feel the crisp excitement"
+          }
+        ],
+        "mainWorkout": [
+          {
+            "exercise": "Cold Weather Push-ups",
+            "description": "Push-ups that generate warmth and strength in the cold",
+            "sets": "4",
+            "reps": "10-12",
+            "rest": "80 seconds",
+            "tips": "Generate heat with effort, embrace the elements"
+          },
+          {
+            "exercise": "Winter Warrior Squats",
+            "description": "Squats building the strength of winter warriors",
+            "sets": "4",
+            "reps": "12-15",
+            "rest": "75 seconds",
+            "tips": "Winter warrior strength, thrive in any conditions"
+          },
+          {
+            "exercise": "Outdoor Core Power",
+            "description": "Core strengthening with the power of outdoor elements",
+            "sets": "3",
+            "reps": "50 seconds",
+            "rest": "70 seconds",
+            "tips": "Outdoor power, connect with natural strength"
+          }
+        ],
+        "cooldown": [
+          {
+            "exercise": "Winter Recovery",
+            "description": "Peaceful recovery connecting with winter's natural calm",
+            "duration": "8 minutes",
+            "tips": "Find peace in the winter calm, you earned this rest"
+          }
+        ]
+      },
+      {
+        "id": "groupmember_hockey_strength_9",
+        "title": "Heritage Classic Honor",
+        "description": "Honor hockey's heritage while building timeless strength",
+        "difficulty": "beginner",
+        "estimatedDuration": "15-20 minutes",
+        "category": "Hockey Strength",
+        "focus": "strength training",
+        "equipment": "full gym access",
+        "warmup": [
+          {
+            "exercise": "Heritage Respect Preparation",
+            "description": "Respectful preparation honoring hockey's great heritage",
+            "duration": "3 minutes",
+            "rest": "None",
+            "tips": "Honor the game's heritage with your effort"
+          }
+        ],
+        "mainWorkout": [
+          {
+            "exercise": "Classic Era Push-ups",
+            "description": "Timeless push-ups honoring hockey's classic era",
+            "sets": "3",
+            "reps": "6-10",
+            "rest": "60 seconds",
+            "tips": "Classic strength, honor the timeless fundamentals"
+          },
+          {
+            "exercise": "Heritage Squats",
+            "description": "Squats with the dignity and strength of hockey heritage",
+            "sets": "3",
+            "reps": "8-12",
+            "rest": "60 seconds",
+            "tips": "Heritage strength, connect with hockey's noble past"
+          },
+          {
+            "exercise": "Original Six Core",
+            "description": "Core work honoring the Original Six era of hockey",
+            "sets": "3",
+            "reps": "25 seconds",
+            "rest": "45 seconds",
+            "tips": "Original Six strength, honor the founding era"
+          }
+        ],
+        "cooldown": [
+          {
+            "exercise": "Heritage Reflection",
+            "description": "Reflective recovery honoring your place in hockey's story",
+            "duration": "4 minutes",
+            "tips": "You're part of hockey's continuing heritage story"
+          }
+        ]
+      },
+      {
+        "id": "groupmember_hockey_strength_10",
+        "title": "Hall of Fame Legacy Builder",
+        "description": "Build strength worthy of Hall of Fame recognition and lasting legacy",
+        "difficulty": "intermediate",
+        "estimatedDuration": "30-45 minutes",
+        "category": "Hockey Strength",
+        "focus": "strength training",
+        "equipment": "minimal equipment",
+        "warmup": [
+          {
+            "exercise": "Legacy Preparation",
+            "description": "Prepare with the dedication of those building lasting legacies",
+            "duration": "4 minutes",
+            "rest": "30 seconds",
+            "tips": "Legacies are built one workout at a time"
+          }
+        ],
+        "mainWorkout": [
+          {
+            "exercise": "Hall of Fame Push-ups",
+            "description": "Push-ups with the excellence worthy of Hall of Fame recognition",
+            "sets": "4",
+            "reps": "10-12",
+            "rest": "75 seconds",
+            "tips": "Hall of Fame excellence, build your legacy"
+          },
+          {
+            "exercise": "Legacy Squats",
+            "description": "Squats that build a lasting legacy of strength and dedication",
+            "sets": "4",
+            "reps": "12-15",
+            "rest": "70 seconds",
+            "tips": "Legacy strength, every rep builds your story"
+          },
+          {
+            "exercise": "Immortal Core Work",
+            "description": "Core strengthening that creates an immortal legacy",
+            "sets": "3",
+            "reps": "45 seconds",
+            "rest": "65 seconds",
+            "tips": "Immortal strength, your legacy lives forever"
+          }
+        ],
+        "cooldown": [
+          {
+            "exercise": "Legacy Reflection",
+            "description": "Reflect on the legacy you're building with each effort",
+            "duration": "7 minutes",
+            "tips": "You're building a Hall of Fame legacy, one workout at a time"
+          }
+        ]
+      }
+    ],
+    "hockey_mobility": [
+      {
+        "id": "groupmember_hockey_mobility_1",
+        "title": "Figure Skater Flexibility Flow",
+        "description": "Graceful mobility work inspired by the fluid movements on ice",
+        "difficulty": "beginner",
+        "estimatedDuration": "15-20 minutes",
+        "category": "Hockey Mobility",
+        "focus": "flexibility/mobility",
+        "equipment": "no equipment",
+        "warmup": [
+          {
+            "exercise": "Ice Rink Gentle Glide",
+            "description": "Slow, flowing movements like gliding gracefully on ice",
+            "duration": "2 minutes",
+            "rest": "None",
+            "tips": "Smooth and flowing, like you're on perfect ice"
+          }
+        ],
+        "mainWorkout": [
+          {
+            "exercise": "Hockey Hip Circles",
+            "description": "Hip circles that improve the mobility needed for skating",
+            "sets": "2",
+            "reps": "10 each direction",
+            "rest": "30 seconds",
+            "tips": "Smooth circles, great skaters have mobile hips"
+          },
+          {
+            "exercise": "Goalie Stretch Saves",
+            "description": "Deep stretches like a goalie reaching for those impossible saves",
+            "sets": "2",
+            "reps": "30 seconds each side",
+            "rest": "15 seconds",
+            "tips": "Reach like you're making the save of the game"
+          },
+          {
+            "exercise": "Zamboni Spinal Waves",
+            "description": "Gentle spinal movements like the smooth pattern of a zamboni",
+            "sets": "3",
+            "reps": "8-10",
+            "rest": "30 seconds",
+            "tips": "Smooth and controlled, resurface your spine"
+          }
+        ],
+        "cooldown": [
+          {
+            "exercise": "Ice Time Recovery",
+            "description": "Final relaxation like resting on fresh, smooth ice",
+            "duration": "4 minutes",
+            "tips": "Let your body rest and recover like perfect ice"
+          }
+        ]
+      },
+      {
+        "id": "groupmember_hockey_mobility_2",
+        "title": "Skating Grace Flexibility",
+        "description": "Smooth and graceful mobility work inspired by beautiful skating movements",
+        "difficulty": "advanced",
+        "estimatedDuration": "45-60 minutes",
+        "category": "Hockey Mobility",
+        "focus": "flexibility/mobility",
+        "equipment": "no equipment",
+        "warmup": [
+          {
+            "exercise": "Graceful Glide Preparation",
+            "description": "Gentle preparation like gliding gracefully across perfect ice",
+            "duration": "4 minutes",
+            "rest": "None",
+            "tips": "Move with grace, like a dancer on ice"
+          }
+        ],
+        "mainWorkout": [
+          {
+            "exercise": "Skating Stride Stretches",
+            "description": "Deep stretches mimicking the beautiful extension of skating strides",
+            "sets": "3",
+            "reps": "45 seconds each side",
+            "rest": "30 seconds",
+            "tips": "Extend like a perfect skating stride, smooth and powerful"
+          },
+          {
+            "exercise": "Ice Dance Flows",
+            "description": "Flowing movements like performing a beautiful ice dance routine",
+            "sets": "4",
+            "reps": "60 seconds",
+            "rest": "45 seconds",
+            "tips": "Flow like poetry in motion, dancing on ice"
+          },
+          {
+            "exercise": "Crossover Flexibility",
+            "description": "Hip and leg mobility for beautiful crossover movements",
+            "sets": "3",
+            "reps": "30 seconds each direction",
+            "rest": "30 seconds",
+            "tips": "Smooth crossovers, like painting curves on ice"
+          }
+        ],
+        "cooldown": [
+          {
+            "exercise": "Perfect Ice Rest",
+            "description": "Peaceful rest like lying on perfect, smooth ice",
+            "duration": "8 minutes",
+            "tips": "Rest with the peace of perfect ice, completely relaxed"
+          }
+        ]
+      },
+      {
+        "id": "groupmember_hockey_mobility_3",
+        "title": "Rookie Flexibility Foundation",
+        "description": "Gentle and encouraging mobility work for hockey flexibility beginners",
+        "difficulty": "beginner",
+        "estimatedDuration": "15-20 minutes",
+        "category": "Hockey Mobility",
+        "focus": "flexibility/mobility",
+        "equipment": "full gym access",
+        "warmup": [
+          {
+            "exercise": "Welcome to Hockey Mobility",
+            "description": "Gentle introduction to hockey-inspired flexibility work",
+            "duration": "2 minutes",
+            "rest": "None",
+            "tips": "Welcome to flexibility, every pro started here"
+          }
+        ],
+        "mainWorkout": [
+          {
+            "exercise": "First Skate Stretches",
+            "description": "Basic stretches like preparing for your very first skate",
+            "sets": "3",
+            "reps": "30 seconds",
+            "rest": "30 seconds",
+            "tips": "Gentle progress, every stretch makes you better"
+          },
+          {
+            "exercise": "Rookie Range of Motion",
+            "description": "Simple movements building basic hockey mobility",
+            "sets": "3",
+            "reps": "20 seconds each direction",
+            "rest": "30 seconds",
+            "tips": "Building your foundation, rookies improve every day"
+          },
+          {
+            "exercise": "Learning Flexibility",
+            "description": "Basic flexibility work like learning fundamental hockey movements",
+            "sets": "3",
+            "reps": "25 seconds",
+            "rest": "35 seconds",
+            "tips": "You're learning and growing, be proud of your progress"
+          }
+        ],
+        "cooldown": [
+          {
+            "exercise": "Rookie Pride Recovery",
+            "description": "Rest with pride in your developing hockey flexibility",
+            "duration": "3 minutes",
+            "tips": "Be proud of starting your flexibility journey"
+          }
+        ]
+      },
+      {
+        "id": "groupmember_hockey_mobility_4",
+        "title": "Power Play Flow",
+        "description": "Dynamic mobility work inspired by power play movement and positioning",
+        "difficulty": "intermediate",
+        "estimatedDuration": "30-45 minutes",
+        "category": "Hockey Mobility",
+        "focus": "flexibility/mobility",
+        "equipment": "minimal equipment",
+        "warmup": [
+          {
+            "exercise": "Power Play Setup",
+            "description": "Dynamic preparation for power play mobility work",
+            "duration": "3 minutes",
+            "rest": "None",
+            "tips": "Set up for success, power play opportunity ahead"
+          }
+        ],
+        "mainWorkout": [
+          {
+            "exercise": "One-Timer Reach",
+            "description": "Reaching stretches like setting up for the perfect one-timer",
+            "sets": "4",
+            "reps": "30 seconds each side",
+            "rest": "30 seconds",
+            "tips": "Reach for the perfect pass, extend fully"
+          },
+          {
+            "exercise": "Cycling Mobility",
+            "description": "Hip and core mobility for smooth cycling movements",
+            "sets": "3",
+            "reps": "45 seconds",
+            "rest": "45 seconds",
+            "tips": "Smooth cycling motion, keep the play alive"
+          },
+          {
+            "exercise": "Screen Position Stretches",
+            "description": "Flexibility work for maintaining screen positions",
+            "sets": "3",
+            "reps": "40 seconds",
+            "rest": "40 seconds",
+            "tips": "Hold your position, flexible and strong"
+          }
+        ],
+        "cooldown": [
+          {
+            "exercise": "Power Play Success",
+            "description": "Celebratory rest after successful power play mobility",
+            "duration": "6 minutes",
+            "tips": "Power play success, you moved beautifully"
+          }
+        ]
+      },
+      {
+        "id": "groupmember_hockey_mobility_5",
+        "title": "Playoff Warrior Recovery",
+        "description": "Restorative mobility work for playoff warriors and battle recovery",
+        "difficulty": "advanced",
+        "estimatedDuration": "45-60 minutes",
+        "category": "Hockey Mobility",
+        "focus": "flexibility/mobility",
+        "equipment": "no equipment",
+        "warmup": [
+          {
+            "exercise": "Warrior Preparation",
+            "description": "Mindful preparation for warrior recovery mobility",
+            "duration": "4 minutes",
+            "rest": "None",
+            "tips": "Warriors need recovery, honor your battles"
+          }
+        ],
+        "mainWorkout": [
+          {
+            "exercise": "Battle Recovery Stretches",
+            "description": "Deep stretches releasing tension from playoff battles",
+            "sets": "4",
+            "reps": "60 seconds",
+            "rest": "30 seconds",
+            "tips": "Release the battle tension, you earned this recovery"
+          },
+          {
+            "exercise": "Warrior Hip Flows",
+            "description": "Hip mobility flows for warriors recovering from intense battles",
+            "sets": "3",
+            "reps": "90 seconds",
+            "rest": "60 seconds",
+            "tips": "Warrior recovery, your hips carried you through battles"
+          },
+          {
+            "exercise": "Playoff Restoration",
+            "description": "Restorative movements preparing for the next playoff battle",
+            "sets": "3",
+            "reps": "75 seconds",
+            "rest": "45 seconds",
+            "tips": "Restore yourself, the battle continues tomorrow"
+          }
+        ],
+        "cooldown": [
+          {
+            "exercise": "Warrior's Rest",
+            "description": "Deep rest honoring the recovery needs of playoff warriors",
+            "duration": "10 minutes",
+            "tips": "Rest deeply warrior, you've earned this peace"
+          }
+        ]
+      },
+      {
+        "id": "groupmember_hockey_mobility_6",
+        "title": "All-Star Flexibility Showcase",
+        "description": "Fun and celebratory mobility work with All-Star flair and creativity",
+        "difficulty": "beginner",
+        "estimatedDuration": "15-20 minutes",
+        "category": "Hockey Mobility",
+        "focus": "flexibility/mobility",
+        "equipment": "full gym access",
+        "warmup": [
+          {
+            "exercise": "All-Star Entrance Flow",
+            "description": "Celebratory warm-up like entering the All-Star flexibility showcase",
+            "duration": "3 minutes",
+            "rest": "None",
+            "tips": "You're the All-Star of flexibility, showcase your grace"
+          }
+        ],
+        "mainWorkout": [
+          {
+            "exercise": "Skills Competition Stretches",
+            "description": "Creative stretches like competing in flexibility skills competition",
+            "sets": "3",
+            "reps": "40 seconds",
+            "rest": "40 seconds",
+            "tips": "Show your flexibility skills, entertain the crowd"
+          },
+          {
+            "exercise": "Fan Favorite Flows",
+            "description": "Crowd-pleasing mobility flows that make you a fan favorite",
+            "sets": "4",
+            "reps": "35 seconds",
+            "rest": "35 seconds",
+            "tips": "The crowd loves your grace, keep them amazed"
+          },
+          {
+            "exercise": "All-Star Finale Stretch",
+            "description": "Grand finale flexibility display for your All-Star performance",
+            "sets": "3",
+            "reps": "45 seconds",
+            "rest": "30 seconds",
+            "tips": "Finale stretch, you're the All-Star of mobility"
+          }
+        ],
+        "cooldown": [
+          {
+            "exercise": "All-Star Bow",
+            "description": "Take your All-Star bow while enjoying peaceful recovery",
+            "duration": "4 minutes",
+            "tips": "Take your bow All-Star, you performed beautifully"
+          }
+        ]
+      },
+      {
+        "id": "groupmember_hockey_mobility_7",
+        "title": "Championship Grace",
+        "description": "Elegant mobility work worthy of championship moments and celebrations",
+        "difficulty": "intermediate",
+        "estimatedDuration": "30-45 minutes",
+        "category": "Hockey Mobility",
+        "focus": "flexibility/mobility",
+        "equipment": "minimal equipment",
+        "warmup": [
+          {
+            "exercise": "Championship Preparation",
+            "description": "Elegant preparation for championship-level mobility work",
+            "duration": "4 minutes",
+            "rest": "None",
+            "tips": "Prepare with championship grace and elegance"
+          }
+        ],
+        "mainWorkout": [
+          {
+            "exercise": "Trophy Lift Stretches",
+            "description": "Reaching stretches like lifting the championship trophy",
+            "sets": "4",
+            "reps": "50 seconds",
+            "rest": "40 seconds",
+            "tips": "Lift with grace, you've earned the championship"
+          },
+          {
+            "exercise": "Victory Lap Flows",
+            "description": "Flowing movements like taking a graceful victory lap",
+            "sets": "3",
+            "reps": "60 seconds",
+            "rest": "45 seconds",
+            "tips": "Victory lap grace, celebrate your achievement"
+          },
+          {
+            "exercise": "Championship Celebration",
+            "description": "Celebratory mobility worthy of championship moments",
+            "sets": "3",
+            "reps": "45 seconds",
+            "rest": "45 seconds",
+            "tips": "Celebrate with grace, you're a champion"
+          }
+        ],
+        "cooldown": [
+          {
+            "exercise": "Champion's Peace",
+            "description": "Peaceful rest befitting a mobility champion",
+            "duration": "7 minutes",
+            "tips": "Rest in championship peace, you achieved greatness"
+          }
+        ]
+      },
+      {
+        "id": "groupmember_hockey_mobility_8",
+        "title": "Winter Classic Zen",
+        "description": "Peaceful outdoor-inspired mobility connecting with winter's natural calm",
+        "difficulty": "advanced",
+        "estimatedDuration": "45-60 minutes",
+        "category": "Hockey Mobility",
+        "focus": "flexibility/mobility",
+        "equipment": "no equipment",
+        "warmup": [
+          {
+            "exercise": "Winter Mindfulness",
+            "description": "Mindful preparation connecting with winter's peaceful energy",
+            "duration": "5 minutes",
+            "rest": "None",
+            "tips": "Connect with winter's peace, breathe the crisp air"
+          }
+        ],
+        "mainWorkout": [
+          {
+            "exercise": "Snowfall Stretches",
+            "description": "Gentle stretches like snowflakes falling peacefully",
+            "sets": "4",
+            "reps": "70 seconds",
+            "rest": "30 seconds",
+            "tips": "Gentle like snowfall, peaceful and natural"
+          },
+          {
+            "exercise": "Winter Wind Flows",
+            "description": "Flowing movements like winter wind through the trees",
+            "sets": "3",
+            "reps": "90 seconds",
+            "rest": "60 seconds",
+            "tips": "Flow like winter wind, natural and free"
+          },
+          {
+            "exercise": "Frost Morning Mobility",
+            "description": "Crisp and refreshing mobility like a frost-covered morning",
+            "sets": "3",
+            "reps": "60 seconds",
+            "rest": "60 seconds",
+            "tips": "Crisp and refreshing, awakened by winter beauty"
+          }
+        ],
+        "cooldown": [
+          {
+            "exercise": "Winter's Deep Peace",
+            "description": "Deep rest connecting with winter's profound stillness",
+            "duration": "10 minutes",
+            "tips": "Find winter's deep peace, completely still and calm"
+          }
+        ]
+      },
+      {
+        "id": "groupmember_hockey_mobility_9",
+        "title": "Heritage Classic Honor Flow",
+        "description": "Traditional and respectful mobility honoring hockey's noble heritage",
+        "difficulty": "beginner",
+        "estimatedDuration": "15-20 minutes",
+        "category": "Hockey Mobility",
+        "focus": "flexibility/mobility",
+        "equipment": "full gym access",
+        "warmup": [
+          {
+            "exercise": "Heritage Respect",
+            "description": "Respectful preparation honoring hockey's great heritage and tradition",
+            "duration": "3 minutes",
+            "rest": "None",
+            "tips": "Honor hockey's heritage with respectful movement"
+          }
+        ],
+        "mainWorkout": [
+          {
+            "exercise": "Classic Era Stretches",
+            "description": "Timeless stretches honoring the classic era of hockey",
+            "sets": "3",
+            "reps": "40 seconds",
+            "rest": "40 seconds",
+            "tips": "Classic and timeless, honor the traditional ways"
+          },
+          {
+            "exercise": "Original Six Flows",
+            "description": "Flowing movements honoring the Original Six era",
+            "sets": "3",
+            "reps": "50 seconds",
+            "rest": "50 seconds",
+            "tips": "Original Six grace, honor the founding teams"
+          },
+          {
+            "exercise": "Heritage Flexibility",
+            "description": "Traditional flexibility work connecting with hockey's noble past",
+            "sets": "3",
+            "reps": "35 seconds",
+            "rest": "45 seconds",
+            "tips": "Heritage flexibility, connect with hockey's noble tradition"
+          }
+        ],
+        "cooldown": [
+          {
+            "exercise": "Heritage Gratitude",
+            "description": "Grateful rest honoring your place in hockey's continuing story",
+            "duration": "5 minutes",
+            "tips": "Grateful for heritage, you're part of hockey's story"
+          }
+        ]
+      },
+      {
+        "id": "groupmember_hockey_mobility_10",
+        "title": "Hall of Fame Flexibility Legacy",
+        "description": "Legendary mobility work building a Hall of Fame legacy of movement",
+        "difficulty": "intermediate",
+        "estimatedDuration": "30-45 minutes",
+        "category": "Hockey Mobility",
+        "focus": "flexibility/mobility",
+        "equipment": "minimal equipment",
+        "warmup": [
+          {
+            "exercise": "Legacy Building Preparation",
+            "description": "Preparation for building a Hall of Fame mobility legacy",
+            "duration": "4 minutes",
+            "rest": "30 seconds",
+            "tips": "Build your legacy one movement at a time"
+          }
+        ],
+        "mainWorkout": [
+          {
+            "exercise": "Hall of Fame Stretches",
+            "description": "Stretches worthy of Hall of Fame recognition and admiration",
+            "sets": "4",
+            "reps": "55 seconds",
+            "rest": "45 seconds",
+            "tips": "Hall of Fame quality, every stretch builds your legacy"
+          },
+          {
+            "exercise": "Legendary Flows",
+            "description": "Flowing movements creating a legendary mobility performance",
+            "sets": "3",
+            "reps": "75 seconds",
+            "rest": "60 seconds",
+            "tips": "Legendary movement, your legacy flows through time"
+          },
+          {
+            "exercise": "Immortal Flexibility",
+            "description": "Flexibility work that creates an immortal movement legacy",
+            "sets": "3",
+            "reps": "60 seconds",
+            "rest": "60 seconds",
+            "tips": "Immortal flexibility, your legacy lives forever"
+          }
+        ],
+        "cooldown": [
+          {
+            "exercise": "Legacy Reflection",
+            "description": "Reflect on the Hall of Fame mobility legacy you're creating",
+            "duration": "8 minutes",
+            "tips": "Your mobility legacy is Hall of Fame worthy"
+          }
+        ]
+      }
+    ]
+  }
+}

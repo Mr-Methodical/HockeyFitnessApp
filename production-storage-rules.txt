@@ -1,0 +1,116 @@
+rules_version = '2';
+service firebase.storage {
+  match /b/{bucket}/o {
+    
+    // =======================
+    // USER WORKOUT IMAGES
+    // =======================
+    match /workouts/{userId}/{imageId} {
+      // Users can read images from their team members
+      allow read: if request.auth != null && 
+        (request.auth.uid == userId || isTeamMember(userId));
+      
+      // Users can only upload images to their own folder
+      allow write: if request.auth != null && 
+        request.auth.uid == userId &&
+        validateImageUpload();
+      
+      // Users can delete their own images
+      allow delete: if request.auth != null && 
+        request.auth.uid == userId;
+    }
+    
+    // =======================
+    // PUBLIC WORKOUT IMAGES
+    // =======================
+    match /workouts/public/{imageId} {
+      // Anyone can read public images
+      allow read: if true;
+      
+      // Only authenticated users can upload public images (for admin use)
+      allow write: if request.auth != null &&
+        validateImageUpload();
+    }
+    
+    // =======================
+    // AI GENERATED IMAGES
+    // =======================
+    match /ai-generated/{userId}/{imageId} {
+      // Users can read their own AI images and team members' AI images
+      allow read: if request.auth != null && 
+        (request.auth.uid == userId || isTeamMember(userId));
+      
+      // System can create AI images for users
+      allow write: if request.auth != null && 
+        request.auth.uid == userId &&
+        validateImageUpload();
+    }
+    
+    // =======================
+    // PROFILE IMAGES
+    // =======================
+    match /profiles/{userId}/{imageId} {
+      // Users can read their own profile images and team members' images
+      allow read: if request.auth != null && 
+        (request.auth.uid == userId || isTeamMember(userId));
+      
+      // Users can only upload to their own profile folder
+      allow write: if request.auth != null && 
+        request.auth.uid == userId &&
+        validateImageUpload();
+      
+      // Users can delete their own profile images
+      allow delete: if request.auth != null && 
+        request.auth.uid == userId;
+    }
+    
+    // =======================
+    // TEAM IMAGES
+    // =======================
+    match /teams/{teamId}/{imageId} {
+      // Team members can read team images
+      allow read: if request.auth != null && 
+        isTeamMemberByTeamId(teamId);
+      
+      // Only coaches can upload team images
+      allow write: if request.auth != null && 
+        isCoachByTeamId(teamId) &&
+        validateImageUpload();
+      
+      // Only coaches can delete team images
+      allow delete: if request.auth != null && 
+        isCoachByTeamId(teamId);
+    }
+    
+    // =======================
+    // HELPER FUNCTIONS
+    // =======================
+    
+    // Check if user is team member by checking their user document
+    function isTeamMember(userId) {
+      return firestore.exists(/databases/(default)/documents/users/$(request.auth.uid)) &&
+        firestore.get(/databases/(default)/documents/users/$(request.auth.uid)).data.teamId ==
+        firestore.get(/databases/(default)/documents/users/$(userId)).data.teamId;
+    }
+    
+    // Check if user is team member by team ID
+    function isTeamMemberByTeamId(teamId) {
+      return firestore.exists(/databases/(default)/documents/teams/$(teamId)) &&
+        (request.auth.uid in firestore.get(/databases/(default)/documents/teams/$(teamId)).data.members ||
+         request.auth.uid == firestore.get(/databases/(default)/documents/teams/$(teamId)).data.coachId);
+    }
+    
+    // Check if user is coach by team ID
+    function isCoachByTeamId(teamId) {
+      return firestore.exists(/databases/(default)/documents/teams/$(teamId)) &&
+        request.auth.uid == firestore.get(/databases/(default)/documents/teams/$(teamId)).data.coachId;
+    }
+    
+    // Validate image upload
+    function validateImageUpload() {
+      return request.resource.size < 10 * 1024 * 1024 && // Max 10MB
+        request.resource.contentType.matches('image/.*') && // Only images
+        request.resource.contentType in ['image/jpeg', 'image/png', 'image/webp']; // Specific formats
+    }
+  }
+}
