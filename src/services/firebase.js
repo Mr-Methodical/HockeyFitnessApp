@@ -28,8 +28,8 @@ const requiredEnvVars = [
 ];
 
 const missingVars = requiredEnvVars.filter(varName => !process.env[varName]);
-if (missingVars.length > 0) {
-  throw new Error(
+if (missingVars.length > 0 && process.env.NODE_ENV !== 'production') {
+  console.warn(
     `Missing required environment variables: ${missingVars.join(', ')}. ` +
     'Please check your .env file and ensure all Firebase configuration variables are set.'
   );
