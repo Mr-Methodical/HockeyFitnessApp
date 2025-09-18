@@ -54,3 +54,4 @@ generate_images.js
 pc-api-key.json
 google-services.json
 GoogleService-Info.plist
+.claude/
